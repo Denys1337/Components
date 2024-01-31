@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+COLOR_END='\033[0m'
+
+echo -e "$GREEN[ Unit tests start ]$COLOR_END"
+
+npm run test:unit:silent

@@ -1,0 +1,129 @@
+@import './mixins_comps/breakpoints';
+
+// applies basic styles to footer
+@mixin footer() {
+  bottom: 0;
+  background: var(--white);
+  border-top: 1px solid var(--hr-color) !important;
+  padding: 0.75rem 0.75rem 2.125rem;
+  z-index: var(--sticky-bars-z);
+}
+
+// applies style to n repeating elements
+@mixin with-count($n) {
+  @if $n == 1 {
+    &:first-child:nth-last-child(1) {
+      @content;
+    }
+  } @else {
+    &:first-child:nth-last-child(#{$n}),
+    &:first-child:nth-last-child(#{$n}) ~ & {
+      @content;
+    }
+  }
+}
+
+/**
+* Mocks padding-end behaviour
+ */
+@mixin pad-end($width) {
+  &:after {
+    content: '';
+    display: inline-block;
+    width: #{$width};
+  }
+}
+
+/**
+* Mocks padding-start behaviour
+ */
+@mixin pad-start($width) {
+  &:before {
+    content: '';
+    display: inline-block;
+    width: #{$width};
+  }
+}
+
+/**
+* Removes pad-end from last and pad-start from first elements
+ */
+@mixin pad-inside() {
+  &:last-child:after,
+  &:first-child:before {
+    width: 0;
+  }
+}
+
+/**
+* Adds settings to have text-overflow: ellipsis.
+ */
+@mixin text-overflow-ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/**
+* Creates a css arrow pointing to the top
+ */
+@mixin arrow-top($width, $height, $color) {
+  content: '';
+  border-style: solid;
+  border-width: 0 pxToRem($width) pxToRem($height) pxToRem($width);
+  border-color: transparent transparent $color transparent;
+}
+
+/**
+* Creates a css arrow pointing to the bottom
+ */
+@mixin arrow-bottom($width, $height, $color) {
+  content: '';
+  border-style: solid;
+  border-width: pxToRem($height) pxToRem($width) 0 pxToRem($width);
+  border-color: $color transparent transparent transparent;
+}
+
+/**
+* Creates a css arrow pointing to the right
+ */
+@mixin arrow-right($width, $height, $color) {
+  content: '';
+  border-style: solid;
+  border-width: pxToRem($height) 0 pxToRem($height) pxToRem($width);
+  border-color: transparent transparent transparent $color;
+}
+
+/**
+* Creates a css arrow pointing to the left
+ */
+@mixin arrow-left($width, $height, $color) {
+  content: '';
+  border-style: solid;
+  border-width: pxToRem($height) pxToRem($width) pxToRem($height) 0;
+  border-color: transparent $color transparent transparent;
+}
+
+// SVG
+/**
+* Change color of SVG icon
+*/
+@mixin changeSvgColor($color) {
+  svg {
+    path {
+      fill: $color;
+    }
+  }
+}
+/**
+* Controls styles based on the body direction -
+* has a optional 4th argument to overwrite the rtl attribute
+**/
+@mixin ltr-rtl($prop, $val, $rtlval, $rtlprop: #{$prop}) {
+  body:not([dir='rtl']) & {
+    #{$prop}: $val;
+  }
+  body[dir='rtl'] & {
+    #{$rtlprop}: $rtlval;
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "ok": "OK",
+  "cancel": "Скасувати",
+  "yes": "Так",
+  "general": {
+    "no_results": "Жодних результатів",
+    "no_results_for": "Немає результатів для '{key}'",
+    "no_options": "Немає варіантів",
+    "clear": "Очистити",
+    "selections": "Нічого не вибрано|1 вибір|{count} виборів",
+    "type_new_option": "Введіть новий варіант для додавання",
+    "create_new_option": "Створити новий варіант",
+    "advanced": "Розширений",
+    "cancel": "Скасувати",
+    "save": "Зберегти",
+    "section": "Розділ",
+    "add": "Додати",
+    "mandatory": "Обов'язково",
+    "search": "Пошук",
+    "yes": "Так",
+    "no": "ні",
+    "option": "Додатково",
+    "powered_by": "Живлення від",
+    "next": "Далі",
+    "previous": "Попередній",
+    "submit": "Подати",
+    "name": "Ім'я",
+    "label": "Позначення",
+    "value": "Значення",
+    "ok": "OK"
+  },
+  "errors": {
+    "unique": "Значення має бути унікальним"
+  },
+  "empty_state_message": {
+    "title": "Гм... тут порожньо",
+    "description": "Не соромтеся, почніть звітувати та заповніть таблицю",
+    "action_text": "Додати новий запис",
+    "alt_image": "Нема записів"
+  },
+  "file_upload": {
+    "errors": {
+      "title": "Неможливо завантажити файли",
+      "quantity_files_error": "Неможливо завантажити більше {count} файлів.",
+      "size_file_error": "Розмір файлу перевищує {size} МБ. Виберіть файли меншого розміру.| Розмір одного або кількох файлів перевищує {size} МБ. Виберіть файли меншого розміру.",
+      "type_file_error": "Тип файлу {type} не підтримується, завантажте {extensions}"
+    },
+    "attach_photos": "Прикріпити фото",
+    "uploading": "Завантаження файлів",
+    "add_logo": "Додати логотип",
+    "delete": "Видалити",
+    "change": "Змінити"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "Немає фото | 1 фото | {count} фото"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "Результати на сторінці:",
+      "showing_items": "Немає елементів для відображення | Показано 1 з {totalItems} елементів | Показано {startIndex}-{endIndex} з {totalItems} елементів"
+    }
+  },
+  "certifications": {
+    "rename_section": "Перейменувати",
+    "delete_section": "Видалити розділ"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "Ідентифікатор елемента",
+      "unique": "Ідентифікатор елемента вже використовується",
+      "valid_element_id_format": {
+        "title": "Ідентифікатор елемента містить символи, що не підтримуються",
+        "body": "Підтримувані символи: «a–z», «A–Z», «0–9», «-» та «_»"
+      },
+      "hint": "Унікальний ідентифікатор використовується для визначення елемента зовнішніми службами. Підтримувані символи: «a–z», «A–Z», «0–9», «-» та «_»"
+    },
+    "publish": "Публікувати",
+    "save": "Зберегти зміни",
+    "edit": "Редагувати",
+    "apply": "Застосувати",
+    "question": "Питання",
+    "add_section": "+ додати розділ",
+    "add_question": "Додати",
+    "add_question_title": "Додати питання",
+    "stack_add_stack_title": "Додати питання в набір",
+    "add_units": "Додати одиниці вимірювання",
+    "choose_units": "Вибрати одиниці вимірювання",
+    "clear_units": "Очистити одиниці вимірювання",
+    "edit_question_title": "Редагувати питання",
+    "edit_question": "Зберегти",
+    "rename_question": "Редагувати",
+    "delete_question": "Видалити питання",
+    "edit_stack": "Редагувати набір",
+    "delete_stack": "Видалити набір",
+    "delete_confirm_text": "Видалити",
+    "delete_cancel_text": "Скасувати",
+    "delete_question_title": "Видалити питання",
+    "delete_question_content_popup": "Ви дійсно хочете видалити?",
+    "cancel": "Скасувати",
+    "make_repeatable": "Зробити повторюваним",
+    "repeatable_description": "Надає можливість відповідати на набір кілька разів",
+    "create_section_title": "Новий розділ",
+    "create_section_confirm_text": "Додати",
+    "create_section_section_name": "Назва розділу",
+    "update_section_title": "Перейменувати розділ",
+    "update_section_confirm_text": "Зберегти",
+    "delete_section_title": "Видалити розділ",
+    "delete_section_content_popup": "Видалення розділу призведе до видалення всіх питань у цьому розділі.\nВи дійсно бажаєте видалити?",
+    "delete_stack_title": "Видалити набір",
+    "delete_stack_content_popup": "Ви дійсно хочете видалити?",
+    "questions_configuration": {
+      "text": {
+        "title": "Текст",
+        "subtype_short_answer": "Коротка відповідь",
+        "subtype_paragraph": "Параграф"
+      },
+      "choice": {
+        "title": "Вибір",
+        "subtype_boolean": "Так/ні",
+        "subtype_multi_choice": "Вибір декількох варіантів",
+        "subtype_single_choice": "Вибір одного варіанта"
+      },
+      "number": {
+        "title": "Кількість",
+        "subtype_numeric": "Числовий",
+        "subtype_slider": "Повзунок",
+        "subtype_range_slider": "Повзунок діапазону"
+      },
+      "coming_soon": "Незабаром"
+    },
+    "question_types": {
+      "question": "Питання",
+      "stack": "Набір питань"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "Так",
+          "no": "Ні"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "Ви не можете публікувати з порожньою секцією",
+        "description": "Додайте питання у порожній розділ або видаліть його та повторіть спробу."
+      },
+      "duplicate_section_name": "Назва розділу вже існує"
+    },
+    "short_text_placeholder": "Ваша відповідь",
+    "long_text_placeholder": "Ваша відповідь",
+    "numeric_text_placeholder": "Ваша відповідь",
+    "select_category": "Оберіть категорію",
+    "sections_overview": {
+      "content_length": "Запитання відсутні | 1 запитання | {count} запитань"
+    },
+    "new_field_popup": {
+      "name_field_label": "Питання"
+    },
+    "edit_options": "Редагувати опції"
+  },
+  "dynamic_form": {
+    "repeat_stack": "Додати інше"
+  },
+  "image_slider": {
+    "previous_image": "Попереднє зображення",
+    "next_image": "Наступне зображення"
+  },
+  "at_translations": {
+    "original_text": "Оригінальний текст",
+    "add_translation": "Додати переклад",
+    "no_translation": "Введіть повідомлення іншою мовою",
+    "delete": "Видалити"
+  },
+  "at_stepper_section_header": {
+    "completed": "Завершено",
+    "default_unit_count": "0 кроків | 1 крок | {count} кроків",
+    "default_unit_name": "кроки"
+  }
+}

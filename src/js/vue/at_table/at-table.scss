@@ -1,0 +1,101 @@
+.AtTable {
+  --table-border: solid var(--gray-400) 1px;
+  overflow-x: auto;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: calc(var(--max-table-height) - var(--top-offset));
+  background: var(--table-background);
+  border-collapse: separate;
+  border-spacing: 0;
+  border: var(--table-border);
+  border-radius: 0 0 pxToRem(8) pxToRem(8);
+  td {
+    padding: 0;
+  }
+  &.loading-or-empty {
+    overflow: hidden;
+  }
+  &-head {
+    box-sizing: border-box;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    --row-background: var(--gray-200);
+  }
+
+  &-body-row,
+  &-head-row {
+    background-color: var(--row-background);
+  }
+
+  &-body-row {
+    --row-background: var(--table-background);
+    &:hover {
+      transform: scale(1); //Makes the row on top
+      transition: box-shadow 150ms;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12), inset 0px -1px 0px #bcc5cb;
+    }
+    &:nth-child(2n) {
+      --row-background: var(--gray-150);
+    }
+    &.selected {
+      --row-background: var(--pri-100);
+    }
+    &.loading {
+      opacity: 0;
+    }
+  }
+
+  &-body-row-cell > *,
+  &-head-row-cell > * {
+    display: flex;
+    hyphens: auto;
+    width: max-content;
+    max-width: 30ch;
+  }
+  &-body-row-cell,
+  &-head-row-cell {
+    border-bottom: var(--table-border);
+    &:last-child {
+      width: 100%;
+    }
+  }
+  --column-spacing: var(--spacing-04);
+  &-body-row-cell > * {
+    color: var(--gray-900);
+    padding: var(--spacing-04) var(--column-spacing);
+  }
+  &-head-row {
+    max-height: 64px;
+    &-cell {
+      padding: var(--spacing-06) var(--column-spacing);
+    }
+    &.has-subcolumns {
+      .AtTable-head-row-cell {
+        padding: var(--spacing-02) var(--column-spacing);
+      }
+    }
+  }
+
+  &-body.at-table-body-loading {
+    position: unset;
+    height: calc(var(--max-table-height) - var(--top-offset) - var(--table-head-height));
+  }
+  &-body.at-table-body-empty-state {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    .empty-state-message {
+      top: 0;
+      width: 100%;
+      height: calc(100% - var(--table-head-height));
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

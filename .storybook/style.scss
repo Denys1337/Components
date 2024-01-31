@@ -1,0 +1,9 @@
+@import '../src/style/scss/_root.scss';
+
+html,
+body,
+#root,
+.docs-story {
+  height: 100%;
+  font-family: Inter, 'Open Sans', Heebo, sans-serif;
+}

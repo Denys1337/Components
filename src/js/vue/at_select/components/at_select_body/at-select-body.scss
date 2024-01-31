@@ -1,0 +1,84 @@
+@import '@style/scss/_base_functions';
+
+$buttonsSize: 62px;
+$arrowWidth: 0.625rem;
+
+.AtSelectBody {
+  &-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+    padding-inline-start: var(--input-indent);
+    padding-inline-end: var(--input-indent);
+    font-size: var(--input-label-size);
+    color: var(--mt-color);
+    height: 100%;
+  }
+
+  &.dropdown-opened {
+    .arrow-icon {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  .arrow-icon {
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-top: 0.3125rem solid;
+    width: $arrowWidth;
+    display: inline-block;
+  }
+}
+
+.size-s {
+  .AtSelectBody {
+    .mt-label {
+      top: 50%;
+      transform: translateY(-50%);
+
+      &.up {
+        transform: translateY(-160%);
+      }
+    }
+  }
+  .AtSelectBody-button {
+    height: 2em;
+  }
+}
+.size-m {
+  .AtSelectBody {
+    .mt-label {
+      top: 50%;
+      transform: translateY(-50%);
+
+      &.up {
+        transform: translateY(-180%);
+      }
+    }
+  }
+  .AtSelectBody-button {
+    height: pxToRem(40);
+    line-height: 1.1em;
+  }
+}
+
+.AtSelectBody-buttons {
+  display: flex;
+  align-items: center;
+  color: var(--buttons-color);
+  margin-inline-end: 0;
+  > .body-btn {
+    margin: 0;
+    margin-inline-end: 6px;
+    text-decoration: none;
+  }
+}
+
+body[dir='rtl'] {
+  .AtSelectBody-buttons {
+    right: unset;
+    left: 0;
+  }
+}

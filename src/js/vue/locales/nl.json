@@ -1,0 +1,182 @@
+{
+  "ok": "OK",
+  "cancel": "Annuleren",
+  "yes": "Ja",
+  "general": {
+    "no_results": "Geen resultaten",
+    "no_results_for": "Geen resultaten voor '{key}'",
+    "no_options": "Geen opties beschikbaar",
+    "clear": "Wissen",
+    "selections": "Geen selecties|1 selectie|{count} selecties",
+    "type_new_option": "Typ nieuwe optie om toe te voegen",
+    "create_new_option": "Een nieuwe optie maken",
+    "advanced": "Geavanceerd",
+    "cancel": "Annuleren",
+    "save": "Opslaan",
+    "section": "Sectie",
+    "add": "Toevoegen",
+    "mandatory": "Verplicht",
+    "search": "Zoeken",
+    "yes": "Ja",
+    "no": "nee",
+    "option": "Optie",
+    "powered_by": "Aangedreven door",
+    "next": "Volgende",
+    "previous": "Vorige",
+    "submit": "Indienen",
+    "name": "Naam",
+    "label": "Label",
+    "value": "Waarde",
+    "ok": "OK"
+  },
+  "errors": {
+    "unique": "De waarde moet uniek zijn"
+  },
+  "empty_state_message": {
+    "title": "Het is nog erg leeg hier",
+    "description": "Begin met het maken van rapporten zodat de tabel zich langzaam vult",
+    "action_text": "Nieuw record toevoegen",
+    "alt_image": "Er zijn geen records"
+  },
+  "file_upload": {
+    "errors": {
+      "title": "Kon de bestanden niet uploaden",
+      "quantity_files_error": "Kon niet meer dan {count} bestanden uploaden.",
+      "size_file_error": "Bestand is groter dan {size} MB, Selecteer kleinere bestanden.| Eén of meer bestanden zijn groter dan {size} MB, Selecteer kleinere bestanden.",
+      "type_file_error": "Bestandstype {type} wordt niet ondersteund, upload {extensions}"
+    },
+    "attach_photos": "Foto’s bijvoegen",
+    "uploading": "Bestanden worden geüpload",
+    "add_logo": "Logo toevoegen",
+    "delete": "Verwijderen",
+    "change": "Gewijzigd"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "Geen foto's | 1 foto | {count} foto's"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "Resultaten per pagina:",
+      "showing_items": "Geen items om weer te geven | 1 item van de {totalItems} wordt weergegeven | {startIndex}-{endIndex} van de {totalItems} worden weergegeven"
+    }
+  },
+  "certifications": {
+    "rename_section": "Nieuwe naam geven",
+    "delete_section": "Sectie verwijderen"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "Element-ID",
+      "unique": "Element ID wordt al gebruikt",
+      "valid_element_id_format": {
+        "title": "Element ID bevat niet-ondersteunde tekens",
+        "body": "Ondersteunde tekens: 'a-z', 'A-Z', '0-9', '-' en '_'"
+      },
+      "hint": "Unieke ID wordt gebruikt om het element te identificeren voor externe diensten.\nOndersteunde tekens: 'a-z', 'A-Z', '0-9', '-' en '_'"
+    },
+    "publish": "Publiceren",
+    "save": "Wijzigingen opslaan",
+    "edit": "Bewerken",
+    "apply": "Toepassen",
+    "question": "Vraag",
+    "add_section": "+ Sectie toevoegen",
+    "add_question": "Toevoegen",
+    "add_question_title": "Vraag toevoegen",
+    "stack_add_stack_title": "Vraag toevoegen aan stack",
+    "add_units": "Eenheden toevoegen",
+    "choose_units": "Eenheden kiezen",
+    "clear_units": "Eenheden wissen",
+    "edit_question_title": "Vraag bewerken",
+    "edit_question": "Opslaan",
+    "rename_question": "Bewerken",
+    "delete_question": "Vraag verwijderen",
+    "edit_stack": "Stack bewerken",
+    "delete_stack": "Stack verwijderen",
+    "delete_confirm_text": "Verwijderen",
+    "delete_cancel_text": "Annuleren",
+    "delete_question_title": "Vraag verwijderen",
+    "delete_question_content_popup": "Weet u zeker dat u wilt verwijderen?",
+    "cancel": "Annuleren",
+    "make_repeatable": "Herhaalbaar maken",
+    "repeatable_description": "Biedt de mogelijkheid om de stack meerdere keren te beantwoorden",
+    "create_section_title": "Nieuwe sectie",
+    "create_section_confirm_text": "Toevoegen",
+    "create_section_section_name": "Sectienaam",
+    "update_section_title": "Sectie een nieuwe naam geven",
+    "update_section_confirm_text": "Opslaan",
+    "delete_section_title": "Sectie verwijderen",
+    "delete_section_content_popup": "Door het verwijderen van een sectie worden ook alle vragen in die sectie verwijderd.\n Weet u zeker dat u wilt verwijderen?",
+    "delete_stack_title": "Stack verwijderen",
+    "delete_stack_content_popup": "Weet u zeker dat u wilt verwijderen?",
+    "questions_configuration": {
+      "text": {
+        "title": "Tekst",
+        "subtype_short_answer": "Kort antwoord",
+        "subtype_paragraph": "Alinea"
+      },
+      "choice": {
+        "title": "Keuze",
+        "subtype_boolean": "Ja/nee",
+        "subtype_multi_choice": "Meerkeuze",
+        "subtype_single_choice": "Eén keuze"
+      },
+      "number": {
+        "title": "Getal",
+        "subtype_numeric": "Numeriek",
+        "subtype_slider": "Schuifbalk",
+        "subtype_range_slider": "Bereikbalk"
+      },
+      "coming_soon": "Binnenkort"
+    },
+    "question_types": {
+      "question": "Vraag",
+      "stack": "Stack met vragen"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "Ja",
+          "no": "Nee"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "Met een lege sectie kan niet worden gepubliceerd",
+        "description": "Voeg vragen toe aan de lege sectie of verwijder deze en probeer het opnieuw."
+      },
+      "duplicate_section_name": "Sectienaam bestaat al"
+    },
+    "short_text_placeholder": "Uw antwoord",
+    "long_text_placeholder": "Uw antwoord",
+    "numeric_text_placeholder": "Uw antwoord",
+    "select_category": "Selecteer een categorie",
+    "sections_overview": {
+      "content_length": "Geen vragen | 1 vraag | {count} vragen"
+    },
+    "new_field_popup": {
+      "name_field_label": "Vraag"
+    },
+    "edit_options": "Bewerk opties"
+  },
+  "dynamic_form": {
+    "repeat_stack": "Voeg een andere toe"
+  },
+  "image_slider": {
+    "previous_image": "Vorige afbeelding",
+    "next_image": "Volgende afbeelding"
+  },
+  "at_translations": {
+    "original_text": "Originele tekst",
+    "add_translation": "Vertaling toevoegen",
+    "no_translation": "Schrijf uw bericht in een andere taal",
+    "delete": "Verwijderen"
+  },
+  "at_stepper_section_header": {
+    "completed": "Voltooid",
+    "default_unit_count": "0 stappen | 1 stap | {count} stappen",
+    "default_unit_name": "stappen"
+  }
+}

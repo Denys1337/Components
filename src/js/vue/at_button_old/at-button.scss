@@ -1,0 +1,114 @@
+$borderWidth: 1px;
+
+.AtButtonOld {
+  --button-text-color: var(--primary-color);
+  --button-bg-color: var(--primary-bg-color);
+
+  color: var(--button-text-color) !important;
+  background: var(--button-bg-color);
+  border-radius: var(--button-border-radius);
+  padding: (12px - $borderWidth * 2) (18px - $borderWidth * 2);
+  border: solid $borderWidth var(--button-bg-color);
+  min-width: 150px;
+  cursor: pointer;
+
+  transition: color var(--color-duration), background var(--color-duration);
+
+  &:focus,
+  &:hover {
+    --button-text-color: var(--primary-color);
+    --button-bg-color: var(--secondary-bg-color);
+  }
+
+  &[disabled='disabled'] {
+    pointer-events: none;
+    cursor: not-allowed;
+    --button-text-color: var(--disabled-color);
+    --button-bg-color: var(--disabled-bg-color);
+  }
+
+  &[class*='disabled'] {
+    cursor: default;
+    --button-text-color: var(--disabled-color);
+    --button-bg-color: var(--disabled-bg-color);
+  }
+
+  &.warning {
+    --button-bg-color: var(--severity-red);
+    &:focus,
+    &:hover {
+      --button-bg-color: var(--error-red);
+    }
+  }
+
+  &.secondary {
+    --button-bg-color: var(--primary-color);
+    border-color: var(--button-text-color);
+
+    &:hover,
+    &:focus {
+      --button-bg-color: var(--greyE5);
+    }
+
+    &:focus {
+      --button-bg-color: var(--lightest-blue);
+    }
+
+    &[disabled='disabled'] {
+      --button-text-color: var(--disabled-bg-color);
+    }
+  }
+
+  &.tertiary,
+  &.link,
+  &.secondary {
+    --button-text-color: var(--primary-bg-color);
+
+    &.warning {
+      --button-text-color: var(--severity-red);
+    }
+  }
+
+  &.tertiary,
+  &.link {
+    background: none;
+    padding: 0;
+    border: none;
+    min-width: unset;
+
+    &[disabled='disabled'] {
+      --button-text-color: var(--disabled-bg-color);
+    }
+  }
+
+  &.tertiary {
+    &:hover,
+    &:focus {
+      --button-text-color: var(--grayish-black);
+    }
+  }
+
+  &.link {
+    text-decoration: underline;
+    &:hover {
+      --button-text-color: var(--grayish-black);
+    }
+    &:focus {
+      --button-bg-color: var(--lightest-blue);
+    }
+    &[disabled='disabled'] {
+      color: var(--gray-400);
+    }
+  }
+
+  &.popup {
+    min-width: 90px;
+    padding: (7px - $borderWidth) (10px - $borderWidth);
+  }
+
+  > .icon {
+    font-size: 1.25em;
+    top: 0.19em;
+    vertical-align: unset;
+  }
+}

@@ -1,0 +1,98 @@
+@import 'colors';
+@import 'spacings';
+
+$padding-block-wrapper: 0.625rem; // 10px;
+
+// Very important - it is used in several source files
+$global-header-height: 5rem; // 80px;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xlg: 1140px,
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xlg: 1200px,
+  xxlg: 1300px,
+  xl: 1693px,
+) !default;
+
+//bootstrap start
+$primary: $primary-color;
+$secondary: $primary-color;
+$font-path: '../fonts/';
+$font-family-base: 'Inter', 'Heebo', 'Open Sans', sans-serif;
+$font-weight-base: 400;
+
+$border-radius: 0.125rem;
+
+//col-padding
+$grid-gutter-width: 1.25rem; // 20px;  ///-------$grid-gutter-width!!!!!!!!!
+$card-inner-border-radius: 0;
+
+//------btn
+$btn-line-height: 0.975rem; // 15.6px;
+$btn-padding-y-lg: 1.0625rem; // 17px;
+$btn-padding-x-lg: 2.5rem; // 40px;
+$btn-border-radius-lg: 0.0625rem;
+
+// //bootstrap end
+$font-size-content-small: 0.875rem;
+$font-size-content: 1rem; // 16px;
+$font-size-title: 1.5rem; // 24px;
+$font-size-title-small: 1.25rem; // 20px;
+$font-size-btn: 0.875rem;
+
+//Cards
+// $card-border-color: transparent;
+// $card-border-width: 0;
+
+//----input-lg
+// $input-padding-y-lg:20px;
+// $input-padding-x-lg:20px;
+// $input-height-lg: 60px;
+// $border-radius-lg:0;
+//----input-lg -END
+
+//----input
+// $input-padding-y:0.625rem;
+// $input-padding-x:0;
+// $input-border-color:rgba(208, 214, 230, 0.85);
+// $input-placeholder-color:#737373;
+// $form-group-margin-bottom:20px;
+// $input-color:#737373;
+//----input END
+
+//----dropdown-menu
+$dropdown-padding-y: 0;
+$dropdown-spacer: 0;
+//----dropdown-menu END
+
+//----btn
+$btn-padding-y: 0.9375rem;
+$btn-padding-x: 1.4375rem; // 23px;
+$btn-padding-x-sm: 0.75rem;
+//----btn END
+
+//----Breadcrumbs
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-bg: transparent;
+$breadcrumb-border-radius: 0;
+$breadcrumb-item-padding: 0.125rem;
+//----Breadcrumbs END
+
+//----Badges
+$badge-font-size: 0.8125rem;
+$badge-border-radius: 50%;
+$badge-padding-y: 0.125rem;
+$badge-padding-x: 0.3125rem;
+//----Badges END
+
+//----Form builder
+$max-form-width: 896px;

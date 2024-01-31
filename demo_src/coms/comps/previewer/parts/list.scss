@@ -1,0 +1,25 @@
+.List {
+  list-style: none;
+  gap: var(--spacing-02);
+  font-size: 0.875rem;
+
+  li {
+    align-items: center;
+    gap: var(--spacing-02);
+  }
+
+  .button--remove {
+    padding: var(--spacing-01) var(--spacing-01);
+    min-width: initial;
+    color: var(--black);
+    transition: color 0.2s;
+    cursor: pointer;
+  }
+  .button--remove:hover {
+    color: var(--red-500);
+  }
+
+  select {
+    padding: var(--spacing-01) var(--spacing-02);
+  }
+}

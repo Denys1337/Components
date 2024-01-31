@@ -1,0 +1,17 @@
+validate:
+  # Run unit tests
+  stage: validation
+
+  tags:
+    - docker
+
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+
+  script:
+    - npm install -g typescript@4.0.3 ts-node
+    - yarn install
+    - echo "Running unit tests:"
+    - yarn run test:unit:silent
+    - echo "Running TS check:"
+    - yarn run test:types

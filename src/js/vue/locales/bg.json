@@ -1,0 +1,182 @@
+{
+  "ok": "ОК",
+  "cancel": "Отказ",
+  "yes": "Да",
+  "general": {
+    "no_results": "Няма резултати",
+    "no_results_for": "Няма резултати за „{key}“",
+    "no_options": "Няма налични опции",
+    "clear": "Изчистване",
+    "selections": "Няма избори|1 избор|{count} избора",
+    "type_new_option": "Въвеждане на нова опция за добавяне",
+    "create_new_option": "Създаване на нова опция",
+    "advanced": "Разширено",
+    "cancel": "Отказ",
+    "save": "Запазване",
+    "section": "Раздел",
+    "add": "Добавяне",
+    "mandatory": "Задължително",
+    "search": "Търсене",
+    "yes": "Да",
+    "no": "не",
+    "option": "Опция",
+    "powered_by": "Поддържано от",
+    "next": "Напред",
+    "previous": "Назад",
+    "submit": "Изпращане",
+    "name": "Име",
+    "label": "Етикет",
+    "value": "Стойност",
+    "ok": "ОК"
+  },
+  "errors": {
+    "unique": "Стойността трябва да е уникална"
+  },
+  "empty_state_message": {
+    "title": "Хмм... тук е празно",
+    "description": "Отпуснете се, започнете да докладвате и попълните таблицата",
+    "action_text": "Добавяне на нов запис",
+    "alt_image": "Няма записи"
+  },
+  "file_upload": {
+    "errors": {
+      "title": "Неуспешно качване на файлове",
+      "quantity_files_error": "Не можете да качите повече от {count} файла.",
+      "size_file_error": "Файлът надвишава {size} MB. Изберете по-малки файлове. | Един или повече файлове надвишават {size} MB. Изберете по-малки файлове.",
+      "type_file_error": "Типът файл {type} не се поддържа, качете {extensions}"
+    },
+    "attach_photos": "Прикачване на снимки",
+    "uploading": "Качване на файлове",
+    "add_logo": "Добавяне на лого",
+    "delete": "Изтриване",
+    "change": "Промяна"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "Няма снимки | 1 снимка | {count} снимки"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "Резултати на страница:",
+      "showing_items": "Няма елементи за показване | Показване на 1 от {totalItems} елемента | Показване на {startIndex} – {endIndex} от {totalItems} елемента"
+    }
+  },
+  "certifications": {
+    "rename_section": "Преименуване",
+    "delete_section": "Изтриване на раздел"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "Идентификатор на елемент",
+      "unique": "Идентификаторът на елемента вече се използва",
+      "valid_element_id_format": {
+        "title": "Идентификаторът на елемента съдържа знаци, които не се поддържат",
+        "body": "Поддържани знаци: „a – z“, „A – Z“, „0-9“, „-“ и „_“"
+      },
+      "hint": "Идентификаторът на елемента се използва за идентифициране на елемента за външни услуги. Поддържани знаци: „a – z“, „A – Z“, „0-9“, „-“ и „_“"
+    },
+    "publish": "Публикуване",
+    "save": "Запазване на промените",
+    "edit": "Редактиране",
+    "apply": "Прилагане",
+    "question": "Въпрос",
+    "add_section": "+ Добавяне на раздел",
+    "add_question": "Добавяне",
+    "add_question_title": "Добавяне на въпрос",
+    "stack_add_stack_title": "Добавяне на въпрос към набор",
+    "add_units": "Добавяне на единици",
+    "choose_units": "Избиране на единици",
+    "clear_units": "Изчистване на единиците",
+    "edit_question_title": "Редактиране на въпрос",
+    "edit_question": "Запазване",
+    "rename_question": "Редактиране",
+    "delete_question": "Изтриване на въпрос",
+    "edit_stack": "Редактиране на набор",
+    "delete_stack": "Изтриване на набор",
+    "delete_confirm_text": "Изтриване",
+    "delete_cancel_text": "Отказ",
+    "delete_question_title": "Изтриване на въпрос",
+    "delete_question_content_popup": "Наистина ли искате да изтриете?",
+    "cancel": "Отказ",
+    "make_repeatable": "С повторение",
+    "repeatable_description": "Предоставя възможност за отговаряне на набора няколко пъти",
+    "create_section_title": "Нов раздел",
+    "create_section_confirm_text": "Добавяне",
+    "create_section_section_name": "Име на раздел",
+    "update_section_title": "Преименуване на раздел",
+    "update_section_confirm_text": "Запазване",
+    "delete_section_title": "Изтриване на раздел",
+    "delete_section_content_popup": "Изтриването на раздела ще изтрие всички въпроси в този раздел.\n Наистина ли искате да изтриете?",
+    "delete_stack_title": "Изтриване на набор",
+    "delete_stack_content_popup": "Наистина ли искате да изтриете?",
+    "questions_configuration": {
+      "text": {
+        "title": "Текст",
+        "subtype_short_answer": "Кратък отговор",
+        "subtype_paragraph": "Параграф"
+      },
+      "choice": {
+        "title": "Избор",
+        "subtype_boolean": "Да/не",
+        "subtype_multi_choice": "Множествен избор",
+        "subtype_single_choice": "Един избор"
+      },
+      "number": {
+        "title": "Брой",
+        "subtype_numeric": "Цифрово",
+        "subtype_slider": "Плъзгач",
+        "subtype_range_slider": "Плъзгач за диапазон"
+      },
+      "coming_soon": "Очаквайте скоро"
+    },
+    "question_types": {
+      "question": "Въпрос",
+      "stack": "Набор от въпроси"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "Да",
+          "no": "Не"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "Не можете да публикувате с празен раздел",
+        "description": "Добавете въпроси към празния раздел или го премахнете и опитайте отново."
+      },
+      "duplicate_section_name": "Името на раздела вече съществува"
+    },
+    "short_text_placeholder": "Вашият отговор",
+    "long_text_placeholder": "Вашият отговор",
+    "numeric_text_placeholder": "Вашият отговор",
+    "select_category": "Избиране на категория",
+    "sections_overview": {
+      "content_length": "Няма въпроси | 1 въпрос | {count} въпроса"
+    },
+    "new_field_popup": {
+      "name_field_label": "Въпрос"
+    },
+    "edit_options": "Редактиране на опциите"
+  },
+  "dynamic_form": {
+    "repeat_stack": "Добавяне на друго"
+  },
+  "image_slider": {
+    "previous_image": "Предишно изображение",
+    "next_image": "Следващо изображение"
+  },
+  "at_translations": {
+    "original_text": "Първоначален текст",
+    "add_translation": "Добавяне на превод",
+    "no_translation": "Напишете съобщението си на друг език",
+    "delete": "Изтриване"
+  },
+  "at_stepper_section_header": {
+    "completed": "Завършен",
+    "default_unit_count": "0 стъпки | 1 стъпка | {count} стъпки",
+    "default_unit_name": "стъпки"
+  }
+}

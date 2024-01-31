@@ -1,0 +1,27 @@
+pages:
+  # Build and Publish version demo to gitlab pages
+  stage: demo
+
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $DEV_BRANCH && $CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH == $DEV_BRANCH && $CI_PIPELINE_SOURCE == "push"'
+
+  script:
+    - if [ "$CI_COMMIT_BRANCH" == "$DEV_BRANCH" ]; then IS_BETA="true"; else IS_BETA="false"; fi
+    - NPM_PACKAGE_VERSION=$(node -p "require('./package.json').version")
+    # Create demo id. if in branch "dev" it will be called "beta", else it will be the NPM package version with underscore replacing dots
+    - if ["$IS_BETA" == "true"]; then DEMO_ID=${$NPM_PACKAGE_VERSION//\./-}; else DEMO_ID="beta"; fi
+    - echo "creating demo for '${DEMO_ID}' with npm package version ${NPM_PACKAGE_VERSION}"
+
+    - NPM_PACKAGE_NAME=$(node -p "require('./package.json').name")
+    - NPM_PACKAGE_VERSION=$(node -p "require('./package.json').version")
+    - NPM_PACKAGE_REGISTRY=$(node -p "require('./package.json').publishConfig.registry")
+
+    - npm install -g typescript@4.0.3 ts-node
+    - yarn install
+    - npm run test:unit:silent
+    - npm run build:showcase
+
+  artifacts:
+    paths:
+      - public

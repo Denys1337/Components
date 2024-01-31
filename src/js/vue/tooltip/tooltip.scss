@@ -1,0 +1,72 @@
+.Tooltip {
+  --tooltip-padding: 18px;
+  background: var(--white);
+  border-radius: 3px;
+  display: inline-block;
+  padding: var(--tooltip-padding);
+  z-index: var(--tooltip-z);
+  max-width: 300px;
+  width: auto;
+  height: auto;
+  word-break: break-word;
+  hyphens: auto;
+  white-space: break-spaces;
+}
+@media screen and (max-width: 600px) {
+  .Tooltip {
+    max-width: 200px;
+  }
+}
+.Tooltip-content {
+  padding-block-end: 1px;
+  overflow: auto;
+}
+.Tooltip::before {
+  content: '';
+  position: absolute;
+  border: solid transparent calc(var(--arrow-size));
+  --center-arrow: calc(50% - var(--arrow-size));
+  // In order to hide background of other elements
+  --position-end: calc(100% - 1px);
+}
+
+.Tooltip[portal-position='bottom']::before {
+  border-bottom-color: white;
+  border-top: unset;
+  bottom: var(--position-end);
+  left: var(--center-arrow);
+}
+
+.Tooltip[portal-position='top']::before {
+  border-top-color: white;
+  border-bottom: unset;
+  top: 100%;
+  left: var(--center-arrow);
+}
+
+.Tooltip[portal-position='right']::before,
+body[dir='ltr'] .Tooltip[portal-position='inline-end']::before,
+body[dir='rtl'] .Tooltip[portal-position='inline-start']::before {
+  border-right-color: white;
+  border-left: unset;
+  right: var(--position-end);
+  top: var(--center-arrow);
+}
+
+.Tooltip[portal-position='left']::before,
+body[dir='ltr'] .Tooltip[portal-position='inline-start']::before,
+body[dir='rtl'] .Tooltip[portal-position='inline-end']::before {
+  border-left-color: white;
+  border-right: unset;
+  left: var(--position-end);
+  top: var(--center-arrow);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 300ms ease-in;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

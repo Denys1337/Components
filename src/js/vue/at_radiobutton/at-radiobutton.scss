@@ -1,0 +1,177 @@
+@import '../../../style/scss/base_functions';
+
+.AtRadiobutton {
+  --main-color: var(--gray-800);
+  --checked-color: var(--blue);
+  --disabled-color: var(--quotation-disabled-grey);
+
+  --hover-circle-position: #{pxToRem(-13)};
+  --radiobutton-radius: #{pxToRem(18)};
+  --hover-circle-radius: #{pxToRem(40)};
+  --inner-dot-radius: #{pxToRem(10)};
+  --inner-dot-position: #{pxToRem(2)};
+  --border-width: #{pxToRem(2)};
+
+  position: relative;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: var(--input-font-size);
+
+  &.disabled {
+    color: var(--gray-700);
+  }
+
+  .at-radiobutton-input {
+    display: none;
+  }
+
+  .at-radiobutton-label {
+    margin-bottom: 0;
+  }
+
+  .at-radiobutton {
+    display: inline-block;
+    margin-inline-end: 0.3em;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    width: var(--radiobutton-radius);
+    height: var(--radiobutton-radius);
+    cursor: pointer;
+    border-radius: 50%;
+    border: var(--border-width) solid var(--main-color);
+    background-color: var(--white);
+    top: 0.2em;
+    box-sizing: border-box;
+
+    body[dir='rtl'] & {
+      left: auto;
+      right: 0;
+    }
+
+    // hover things here
+    &:before {
+      content: '';
+      height: var(--hover-circle-radius);
+      width: var(--hover-circle-radius);
+      border-radius: 50%;
+      background-color: transparent;
+      position: absolute;
+      top: var(--hover-circle-position);
+      left: var(--hover-circle-position);
+      z-index: 1;
+      transform: scale(0);
+      transition: 300ms;
+      border: none;
+
+      body[dir='rtl'] & {
+        left: auto;
+        right: var(--hover-circle-position);
+      }
+    }
+
+    &:after {
+      display: none;
+      content: '';
+      width: var(--inner-dot-radius);
+      height: var(--inner-dot-radius);
+      border-radius: 50%;
+      background: var(--checked-color);
+      left: var(--inner-dot-position);
+      top: var(--inner-dot-position);
+      position: absolute;
+
+      body[dir='rtl'] & {
+        left: auto;
+        right: var(--inner-dot-position);
+      }
+    }
+
+    &.checked {
+      border: var(--border-width) solid var(--checked-color);
+
+      &:after {
+        display: block;
+      }
+
+      &:hover {
+        &:before {
+          background-color: rgba(58, 121, 255, 0.1);
+          transform: scale(1);
+          transition: 300ms;
+        }
+      }
+
+      &:active {
+        &:before {
+          background-color: rgba(58, 121, 255, 0.3);
+          transform: scale(1);
+          transition: 300ms;
+        }
+      }
+
+      &:focus {
+        &:before {
+          background-color: rgba(58, 121, 255, 0.2);
+          transform: scale(1);
+          transition: 300ms;
+        }
+      }
+    }
+
+    &.disabled {
+      border-color: var(--disabled-color);
+      cursor: default;
+
+      &:after {
+        background: var(--disabled-color);
+      }
+    }
+
+    &:active {
+      &:before {
+        background-color: rgba(210, 210, 210, 0.4);
+        transform: scale(1);
+        transition: 300ms;
+      }
+    }
+
+    &:hover {
+      &:before {
+        background-color: rgba(210, 210, 210, 0.2);
+        transform: scale(1);
+        transition: 300ms;
+      }
+    }
+
+    &:focus {
+      &:before {
+        background-color: rgba(210, 210, 210, 0.3);
+        transform: scale(1);
+        transition: 300ms;
+      }
+    }
+  }
+}
+
+body[dir='rtl'] {
+  .AtRadiobutton {
+    .at-radiobutton-input {
+      right: 0;
+      left: auto;
+
+      // hover things here
+      &:before {
+        right: var(--hover-circle-position);
+        left: auto;
+      }
+
+      &:after {
+        right: var(--inner-dot-position);
+        left: auto;
+      }
+    }
+  }
+}

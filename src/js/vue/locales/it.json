@@ -1,0 +1,182 @@
+{
+  "ok": "OK",
+  "cancel": "Annulla",
+  "yes": "Sì",
+  "general": {
+    "no_results": "Nessun risultato",
+    "no_results_for": "Nessun risultato per '{key}'",
+    "no_options": "Nessuna opzione disponibile",
+    "clear": "Elimina",
+    "selections": "Nessuna selezione|1 selezione|{count} selezioni",
+    "type_new_option": "Inserisci una nuova opzione da aggiungere",
+    "create_new_option": "Crea una nuova opzione",
+    "advanced": "Avanzato",
+    "cancel": "Annulla",
+    "save": "Salva",
+    "section": "Sezione",
+    "add": "Aggiungi",
+    "mandatory": "Obbligatorio",
+    "search": "Ricerca",
+    "yes": "Sì",
+    "no": "no",
+    "option": "Opzione",
+    "powered_by": "Sviluppato da",
+    "next": "Successivo",
+    "previous": "Precedente",
+    "submit": "Invia",
+    "name": "Nome",
+    "label": "Etichetta",
+    "value": "Valore",
+    "ok": "OK"
+  },
+  "errors": {
+    "unique": "Il valore deve essere univoco"
+  },
+  "empty_state_message": {
+    "title": "Mmm... sembra che qui sia tutto vuoto",
+    "description": "Non esitare, inizia il report e compila la tabella",
+    "action_text": "Aggiungi nuovo record",
+    "alt_image": "Non ci sono record"
+  },
+  "file_upload": {
+    "errors": {
+      "title": "Caricamento dei file non riuscito",
+      "quantity_files_error": "Impossibile caricare più di {count} file.",
+      "size_file_error": "Il file supera {grandezza} MB, selezionare file più piccoli.| Uno o più file superano {grandezza} MB, selezionare file più piccoli.",
+      "type_file_error": "Il tipo di file {type} non è supportato, si prega di caricare un {extensions}"
+    },
+    "attach_photos": "Allega foto",
+    "uploading": "Caricamento file",
+    "add_logo": "Aggiungi logo",
+    "delete": "Elimina",
+    "change": "Cambia"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "Nessuna foto | 1 foto | {count} foto"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "Risultati per pagina:",
+      "showing_items": "Nessuna voce da mostrare | Visualizzata 1 voce di {totalItems} voci totali | Visualizzate {startIndex}-{endIndex} voci di {totalItems} voci totali"
+    }
+  },
+  "certifications": {
+    "rename_section": "Rinomina",
+    "delete_section": "Elimina sezione"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "ID elemento",
+      "unique": "L'ID elemento è già in uso",
+      "valid_element_id_format": {
+        "title": "L'ID elemento contiene caratteri non supportati",
+        "body": "Caratteri supportati: 'a-z', 'A-Z', '0-9', '-' e '_'"
+      },
+      "hint": "L'ID univoco viene utilizzato per identificare l'elemento per i servizi esterni.Caratteri supportati: 'a-z', 'A-Z', '0-9', '-' e '_'"
+    },
+    "publish": "Pubblica",
+    "save": "Salva modifiche",
+    "edit": "Modifica",
+    "apply": "Applica",
+    "question": "Domanda",
+    "add_section": "+ Aggiungi sezione",
+    "add_question": "Aggiungi",
+    "add_question_title": "Aggiungi domanda",
+    "stack_add_stack_title": "Aggiungi domanda allo stack",
+    "add_units": "Aggiungi unità",
+    "choose_units": "Scegli unità",
+    "clear_units": "Cancella unità",
+    "edit_question_title": "Modifica domanda",
+    "edit_question": "Salva",
+    "rename_question": "Modifica",
+    "delete_question": "Elimina domanda",
+    "edit_stack": "Modifica stack",
+    "delete_stack": "Elimina stack",
+    "delete_confirm_text": "Elimina",
+    "delete_cancel_text": "Annulla",
+    "delete_question_title": "Elimina domanda",
+    "delete_question_content_popup": "Confermi di voler eliminare?",
+    "cancel": "Annulla",
+    "make_repeatable": "Rendi ripetibile",
+    "repeatable_description": "Fornisce la possibilità di rispondere più volte allo stack",
+    "create_section_title": "Nuova sezione",
+    "create_section_confirm_text": "Aggiungi",
+    "create_section_section_name": "Nome sezione",
+    "update_section_title": "Rinomina sezione",
+    "update_section_confirm_text": "Salva",
+    "delete_section_title": "Elimina sezione",
+    "delete_section_content_popup": "Eliminando una sezione si elimineranno tutte le domande in essa contenute.\nVuoi davvero eliminare?",
+    "delete_stack_title": "Elimina stack",
+    "delete_stack_content_popup": "Confermi di voler eliminare?",
+    "questions_configuration": {
+      "text": {
+        "title": "Testo",
+        "subtype_short_answer": "Risposta breve",
+        "subtype_paragraph": "Paragrafo"
+      },
+      "choice": {
+        "title": "Scelta",
+        "subtype_boolean": "Sì/no",
+        "subtype_multi_choice": "Scelta multipla",
+        "subtype_single_choice": "Scelta singola"
+      },
+      "number": {
+        "title": "Numero",
+        "subtype_numeric": "Numerico",
+        "subtype_slider": "Cursore",
+        "subtype_range_slider": "Portata cursore"
+      },
+      "coming_soon": "Prossimamente disponibile"
+    },
+    "question_types": {
+      "question": "Domanda",
+      "stack": "Stack di domande"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "Sì",
+          "no": "No"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "Non puoi pubblicare con una sezione vuota",
+        "description": "Aggiungi domande alla sezione vuota oppure rimuovile e riprova."
+      },
+      "duplicate_section_name": "Il nome della sezione esiste già"
+    },
+    "short_text_placeholder": "La tua risposta",
+    "long_text_placeholder": "La tua risposta",
+    "numeric_text_placeholder": "La tua risposta",
+    "select_category": "Seleziona categoria",
+    "sections_overview": {
+      "content_length": "Nessuna domanda | 1 domanda | {count} domande"
+    },
+    "new_field_popup": {
+      "name_field_label": "Domanda"
+    },
+    "edit_options": "Modifica opzioni"
+  },
+  "dynamic_form": {
+    "repeat_stack": "Aggiungi altro"
+  },
+  "image_slider": {
+    "previous_image": "Immagine precedente",
+    "next_image": "Immagine successiva"
+  },
+  "at_translations": {
+    "original_text": "Testo originale",
+    "add_translation": "Aggiungi traduzione",
+    "no_translation": "Digita il tuo messaggio in un'altra lingua",
+    "delete": "Elimina"
+  },
+  "at_stepper_section_header": {
+    "completed": "Completata",
+    "default_unit_count": "0 passaggi | 1 passaggio | {count} passaggi",
+    "default_unit_name": "passaggi"
+  }
+}

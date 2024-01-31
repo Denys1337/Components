@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+#
+# This is a code for validating commit message's format
+
+
+COMMIT_MSG_FILE=$1
+MSG=$(cat $COMMIT_MSG_FILE)
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+COLOR_END='\033[0m'
+FAIL_MESSAGE=false
+
+echo -e "$GREEN[ Commit Message check start ]$COLOR_END"
+
+if [[ $MSG =~ ^((Merge)) ]]
+then
+	echo -e "$GREEN[Merge commit Message - skip further structure validation ]$COLOR_END"
+else
+	if ! [[ $MSG =~ ^((fix)|(feature)|(perf)|(refactor)) ]]
+	then 
+		FAIL_MESSAGE="The commit message does not start with a valid method. Valid types are: 'fix', 'feature', 'perf', 'refactor'."
+	elif ! [[ $MSG =~ ^((fix)|(feature)|(perf)|(refactor))\([a-zA-Z0-9\\-\\_]+\): ]]
+	then 
+		FAIL_MESSAGE="After the commit method a scope should be added between parenthesis followed be a colon."
+	elif ! [[ $MSG =~ ^((fix)|(feature)|(perf)|(refactor))\([a-zA-Z0-9\\-\\_]+\):[[:space:]]\#[a-zA-Z]+\-[[:digit:]] ]]
+	then 
+		FAIL_MESSAGE='The commit message does not contain a valid ticket number prefixed with "#". i.e. "#PLAT-82".'
+	elif ! [[ $MSG =~ ^((fix)|(feature)|(perf)|(refactor))\([a-zA-Z0-9\\-\\_]+\):[[:space:]]\#[a-zA-Z]+\-[[:digit:]]+[[:space:]][[:alnum:]]+ ]]
+	then 
+		FAIL_MESSAGE='The commit message does not have a description. example: "fix(commit): #PLAT-82 [missing description]"'
+	fi
+fi
+
+if [[ $FAIL_MESSAGE == false ]]
+then
+	echo -e "$GREEN[ Commit Message passed successfully ]$COLOR_END"
+	exit 0
+else
+	echo -e "${RED}[ Commit Message ] The commit was aborted, please fix the commit message in order to commit.${COLOR_END}"
+	echo -e $FAIL_MESSAGE
+	echo "The correct format of a commit message is the following:"
+	echo "{commitType}({commitScope}): #{ticketNumber} {commitDescription}"
+	echo "for full instructions see: https://developers.gitlab.agritask.xyz/changelogs/#how-to-commit-properly"
+	exit 1
+fi

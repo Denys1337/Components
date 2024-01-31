@@ -1,0 +1,182 @@
+{
+  "ok": "ОК",
+  "cancel": "Отмена",
+  "yes": "Да",
+  "general": {
+    "no_results": "Ничего не найдено",
+    "no_results_for": "Нет результатов для '{key}'",
+    "no_options": "Опции недоступны",
+    "clear": "Стереть",
+    "selections": "Не выбрано|Выбрано - 1|Выбрано - {count}",
+    "type_new_option": "Введите новую опцию для добавления",
+    "create_new_option": "Создать новую опцию",
+    "advanced": "Расширенные настройки",
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "section": "Секция",
+    "add": "Добавить",
+    "mandatory": "Обязательно",
+    "search": "Поиск",
+    "yes": "Да",
+    "no": "нет",
+    "option": "Опция",
+    "powered_by": "Работает на",
+    "next": "Далее",
+    "previous": "Назад",
+    "submit": "Отправить",
+    "name": "Название",
+    "label": "Ярлык",
+    "value": "Значение",
+    "ok": "ОК"
+  },
+  "errors": {
+    "unique": "Значение должно быть уникальным"
+  },
+  "empty_state_message": {
+    "title": "Хмм... здесь пусто",
+    "description": "Не стесняйтесь, начинайте вводить данные и заполнять таблицу",
+    "action_text": "Добавить новую запись",
+    "alt_image": "Нет записей"
+  },
+  "file_upload": {
+    "errors": {
+      "title": "Не удалось загрузить файлы",
+      "quantity_files_error": "Невозможно загрузить более {count} файлов.",
+      "size_file_error": "Размер файла превышает {size} МБ, выберите меньшие файлы.| Один или более файлов превышает {size} МБ, пожалуйста, выберите меньшие файлы.",
+      "type_file_error": "Тип файла {type} не поддерживается, загрузите {extensions}"
+    },
+    "attach_photos": "Прикрепить фото",
+    "uploading": "Загрузка файлов...",
+    "add_logo": "Добавить логотип",
+    "delete": "Удалить",
+    "change": "Изменить"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "Нет фотографий | 1 фото | {count} фотографий"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "Результатов на странице:",
+      "showing_items": "Нет элементов для отображения | Отображение 1 элемента из {totalItems} | Показано {startIndex}-{endIndex} из {totalItems} элементов"
+    }
+  },
+  "certifications": {
+    "rename_section": "Переименовать",
+    "delete_section": "Удалить раздел"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "Id элемента",
+      "unique": "Id элемента уже используется",
+      "valid_element_id_format": {
+        "title": "Id элемента содержит недопустимые символы",
+        "body": "Поддерживаются символы: 'a-z', 'A-Z', '0-9', '-' и '_'"
+      },
+      "hint": "Уникальный ID используется для идентификации элемента для внешних сервисов.\nПоддерживаемые символы: 'a-z', 'A-Z', '0-9', '-' и '_'"
+    },
+    "publish": "Опубликовать",
+    "save": "Сохранить изменения",
+    "edit": "Редактировать",
+    "apply": "Применить",
+    "question": "Вопрос",
+    "add_section": "+ Добавить раздел",
+    "add_question": "Добавить",
+    "add_question_title": "Добавить вопрос",
+    "stack_add_stack_title": "Добавить вопрос в стек",
+    "add_units": "Добавить единицы",
+    "choose_units": "Выбрать единицы",
+    "clear_units": "Очистить единицы",
+    "edit_question_title": "Изменить вопрос",
+    "edit_question": "Сохранить",
+    "rename_question": "Изменить",
+    "delete_question": "Удалить вопрос",
+    "edit_stack": "Изменить стек",
+    "delete_stack": "Удалить стек",
+    "delete_confirm_text": "Удалить",
+    "delete_cancel_text": "Отмена",
+    "delete_question_title": "Удалить вопрос",
+    "delete_question_content_popup": "Вы уверены, что хотите удалить?",
+    "cancel": "Отмена",
+    "make_repeatable": "Сделать повторяемым",
+    "repeatable_description": "Дает возможность отвечать на стек несколько раз",
+    "create_section_title": "Новый раздел",
+    "create_section_confirm_text": "Добавить",
+    "create_section_section_name": "Название раздела",
+    "update_section_title": "Переименовать раздел",
+    "update_section_confirm_text": "Сохранить",
+    "delete_section_title": "Удалить раздел",
+    "delete_section_content_popup": "Удаление раздела удалит все вопросы в разделе.\n Продолжить?",
+    "delete_stack_title": "Удалить стек",
+    "delete_stack_content_popup": "Вы уверены, что хотите удалить?",
+    "questions_configuration": {
+      "text": {
+        "title": "Текст",
+        "subtype_short_answer": "Короткий ответ",
+        "subtype_paragraph": "Абзац"
+      },
+      "choice": {
+        "title": "Выбор",
+        "subtype_boolean": "Да/нет",
+        "subtype_multi_choice": "Множественный выбор",
+        "subtype_single_choice": "Одиночный выбор"
+      },
+      "number": {
+        "title": "Число",
+        "subtype_numeric": "Цифры",
+        "subtype_slider": "Ползунок",
+        "subtype_range_slider": "Ползунок выбора диапазона"
+      },
+      "coming_soon": "Скоро появится"
+    },
+    "question_types": {
+      "question": "Вопрос",
+      "stack": "Стек вопросов"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "Да",
+          "no": "Нет"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "Нельзя опубликовать сертификацию с пустым разделом",
+        "description": "Добавьте вопросы в пустой раздел или удалите их и повторите попытку."
+      },
+      "duplicate_section_name": "Название раздела уже существует"
+    },
+    "short_text_placeholder": "Ваш ответ",
+    "long_text_placeholder": "Ваш ответ",
+    "numeric_text_placeholder": "Ваш ответ",
+    "select_category": "Выбрать категорию",
+    "sections_overview": {
+      "content_length": "Нет вопросов | 1 вопрос | {count} вопросов"
+    },
+    "new_field_popup": {
+      "name_field_label": "Вопрос"
+    },
+    "edit_options": "Редактировать опции"
+  },
+  "dynamic_form": {
+    "repeat_stack": "Добавить ещё"
+  },
+  "image_slider": {
+    "previous_image": "Предыдущее изображение",
+    "next_image": "Следующее изображение"
+  },
+  "at_translations": {
+    "original_text": "Исходный текст",
+    "add_translation": "Добавить перевод",
+    "no_translation": "Введите текст сообщения на другом языке",
+    "delete": "Удалить"
+  },
+  "at_stepper_section_header": {
+    "completed": "Выполнено",
+    "default_unit_count": "0 шагов | 1 шаг | {count} шагов",
+    "default_unit_name": "шаги"
+  }
+}

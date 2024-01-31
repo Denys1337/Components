@@ -1,0 +1,35 @@
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+$wraps: nowrap, wrap, wrap-reverse;
+
+@each $wrap in $wraps {
+  .flex-#{$wrap} {
+    flex-wrap: $wrap;
+  }
+}
+
+$spacings: '00', '005', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', 'fields', 'auto';
+@each $s in $spacings {
+  .gap-#{$s} {
+    grid-gap: var(--spacing-#{$s});
+    gap: var(--spacing-#{$s});
+  }
+}

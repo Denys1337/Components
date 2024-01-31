@@ -1,0 +1,182 @@
+{
+  "ok": "ตกลง",
+  "cancel": "ยกเลิก",
+  "yes": "ใช่",
+  "general": {
+    "no_results": "ไม่พบผลลัพธ์",
+    "no_results_for": "ไม่พบผลลัพธ์สำหรับ '{key}'",
+    "no_options": "ไม่มีตัวเลือก",
+    "clear": "ล้าง",
+    "selections": "ไม่มีการเลือก|เลือก 1 รายการ|เลือก {count} รายการ",
+    "type_new_option": "พิมพ์ตัวเลือกใหม่เพื่อเพิ่ม",
+    "create_new_option": "สร้างตัวเลือกใหม่",
+    "advanced": "ขั้นสูง",
+    "cancel": "ยกเลิก",
+    "save": "บันทึก",
+    "section": "ส่วน",
+    "add": "เพิ่ม",
+    "mandatory": "บังคับ",
+    "search": "ค้นหา",
+    "yes": "ใช่",
+    "no": "ไม่",
+    "option": "ตัวเลือก",
+    "powered_by": "ได้รับการสนับสนุนโดย",
+    "next": "ถัดไป",
+    "previous": "ก่อนหน้า",
+    "submit": "ส่ง",
+    "name": "ชื่อ",
+    "label": "ฉลาก",
+    "value": "ค่า",
+    "ok": "ตกลง"
+  },
+  "errors": {
+    "unique": "ค่าควรไม่ซ้ำใคร"
+  },
+  "empty_state_message": {
+    "title": "หืมม...ตรงนี้ยังว่างอยู่",
+    "description": "ไม่ต้องอาย เริ่มรายงานและกรอกข้อมูลในตารางได้เลย",
+    "action_text": "เพิ่มบันทึกใหม่",
+    "alt_image": "ไม่มีบันทึก"
+  },
+  "file_upload": {
+    "errors": {
+      "title": "อัปโหลดไฟล์ไม่สำเร็จ",
+      "quantity_files_error": "ไม่สามารถอัปโหลดไฟล์ได้มากกว่า {count} ไฟล์",
+      "size_file_error": "ไฟล์มีขนาดเกินกว่า {size} MB โปรดเลือกไฟล์ที่มีขนาดเล็กลง| มีไฟล์อย่างน้อยหนึ่งไฟล์ที่มีขนาดเกินกว่า {size} MB โปรดเลือกไฟล์ที่มีขนาดเล็กลง",
+      "type_file_error": "ไม่รองรับประเภทไฟล์ {type} โปรดอัปโหลด {extensions}"
+    },
+    "attach_photos": "แนบรูปถ่าย",
+    "uploading": "กำลังอัปโหลดไฟล์",
+    "add_logo": "เพิ่มโลโก้",
+    "delete": "ลบ",
+    "change": "เปลี่ยนแปลง"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "ไม่มีรูปถ่าย | รูปถ่าย 1 รูป | รูปถ่าย {count} รูป"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "ผลลัพธ์ต่อหน้า:",
+      "showing_items": "ไม่มีรายการให้แสดง | กำลังแสดง 1 รายการจากทั้งหมด {totalItems} รายการ | กำลังแสดง {startIndex}-{endIndex} รายการจากทั้งหมด {totalItems} รายการ"
+    }
+  },
+  "certifications": {
+    "rename_section": "เปลี่ยนชื่อ",
+    "delete_section": "ลบส่วน"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "ID องค์ประกอบ",
+      "unique": "ใช้ ID องค์ประกอบแล้ว",
+      "valid_element_id_format": {
+        "title": "ID องค์ประกอบมีตัวอักษรที่ไม่รองรับ",
+        "body": "ตัวอักษรที่รองรับ: 'a-z', 'A-Z', '0-9', '-' และ '_'"
+      },
+      "hint": "ID ที่ไม่เหมือนใครใช้เพื่อระบุองค์ประกอบสำหรับบริการภายนอก\nตัวอักษรที่รองรับ: 'a-z', 'A-Z', '0-9', '-' และ '_'"
+    },
+    "publish": "เผยแพร่",
+    "save": "บันทึกการเปลี่ยนแปลง",
+    "edit": "แก้ไข",
+    "apply": "สมัคร",
+    "question": "คำถาม",
+    "add_section": "+ เพิ่มส่วน",
+    "add_question": "เพิ่ม",
+    "add_question_title": "เพิ่มคำถาม",
+    "stack_add_stack_title": "เพิ่มคำถามลงในกลุ่ม",
+    "add_units": "เพิ่มหน่วย",
+    "choose_units": "เลือกหน่วย",
+    "clear_units": "ล้างหน่วย",
+    "edit_question_title": "แก้ไขคำถาม",
+    "edit_question": "บันทึก",
+    "rename_question": "แก้ไข",
+    "delete_question": "ลบคำถาม",
+    "edit_stack": "แก้ไขกลุ่ม",
+    "delete_stack": "ลบกลุ่ม",
+    "delete_confirm_text": "ลบ",
+    "delete_cancel_text": "ยกเลิก",
+    "delete_question_title": "ลบคำถาม",
+    "delete_question_content_popup": "แน่ใจหรือไม่ว่าต้องการลบ",
+    "cancel": "ยกเลิก",
+    "make_repeatable": "ทำให้ทำซ้ำได้",
+    "repeatable_description": "ทำให้สามารถตอบคำถามได้หลายครั้ง",
+    "create_section_title": "ส่วนใหม่",
+    "create_section_confirm_text": "เพิ่ม",
+    "create_section_section_name": "ชื่อส่วน",
+    "update_section_title": "เปลี่ยนชื่อส่วน",
+    "update_section_confirm_text": "บันทึก",
+    "delete_section_title": "ลบส่วน",
+    "delete_section_content_popup": "หากคุณลบส่วนนี้ คำถามทุกข้อในส่วนนี้จะถูกลบไปด้วย\n แน่ใจหรือไม่ว่าต้องการลบ",
+    "delete_stack_title": "ลบกลุ่ม",
+    "delete_stack_content_popup": "แน่ใจหรือไม่ว่าต้องการลบ",
+    "questions_configuration": {
+      "text": {
+        "title": "ข้อความ",
+        "subtype_short_answer": "คำตอบสั้น ๆ",
+        "subtype_paragraph": "ย่อหน้า"
+      },
+      "choice": {
+        "title": "ตัวเลือก",
+        "subtype_boolean": "ใช่/ไม่ใช่",
+        "subtype_multi_choice": "หลายตัวเลือก",
+        "subtype_single_choice": "ตัวเลือกเดียว"
+      },
+      "number": {
+        "title": "ตัวเลข",
+        "subtype_numeric": "ตัวเลข",
+        "subtype_slider": "ตัวเลื่อน",
+        "subtype_range_slider": "ตัวเลื่อนของช่วง"
+      },
+      "coming_soon": "เร็ว ๆ นี้"
+    },
+    "question_types": {
+      "question": "คำถาม",
+      "stack": "กลุ่มคำถาม"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "ใช่",
+          "no": "ไม่ใช่"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "คุณไม่สามารถเผยแพร่โดยที่มีส่วนที่เว้นว่างได้",
+        "description": "เพิ่มคำถามลงในส่วนที่ว่างอยู่หรือลบออกแล้วลองอีกครั้ง"
+      },
+      "duplicate_section_name": "มีคนใช้ชื่อส่วนนี้แล้ว"
+    },
+    "short_text_placeholder": "คำตอบของคุณ",
+    "long_text_placeholder": "คำตอบของคุณ",
+    "numeric_text_placeholder": "คำตอบของคุณ",
+    "select_category": "เลือกหมวดหมู่",
+    "sections_overview": {
+      "content_length": "ไม่มีคำถาม | 1 คำถาม | {count} คำถาม"
+    },
+    "new_field_popup": {
+      "name_field_label": "คำถาม"
+    },
+    "edit_options": "แก้ไขตัวเลือก"
+  },
+  "dynamic_form": {
+    "repeat_stack": "เพิ่มอีกรายการ"
+  },
+  "image_slider": {
+    "previous_image": "รูปภาพก่อนหน้า",
+    "next_image": "รูปภาพถัดไป"
+  },
+  "at_translations": {
+    "original_text": "ข้อความต้นฉบับ",
+    "add_translation": "เพิ่มการแปล",
+    "no_translation": "พิมพ์ข้อความของคุณเป็นภาษาอื่น",
+    "delete": "ลบ"
+  },
+  "at_stepper_section_header": {
+    "completed": "เสร็จสมบูรณ์แล้ว",
+    "default_unit_count": "0 ขั้นตอน | 1 ขั้นตอน | {count} ขั้นตอน",
+    "default_unit_name": "ขั้นตอน"
+  }
+}

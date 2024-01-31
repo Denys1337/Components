@@ -1,0 +1,72 @@
+@import '@style/scss/_mixin';
+
+.at-nav-link {
+  position: relative;
+  --link-active: var(--pri-500);
+  text-align: start;
+  width: 100%;
+  --start-offset: 0px;
+
+  // To make th elink strech to 100% of the available space
+  max-width: 100%;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  min-width: calc(var(--min-width) - var(--start-offset));
+  gap: var(--spacing-02);
+  color: var(--gray-900);
+  border-radius: 4px;
+  padding: var(--spacing-01);
+  transition: background-color 150ms ease-out;
+  white-space: nowrap;
+  .link-icon-end {
+    flex-shrink: 0;
+    margin-inline-start: auto;
+  }
+  .count-icon {
+    font-size: 12px;
+    background-color: var(--danger-500);
+    color: var(--gray-100);
+    border-radius: 2px;
+    height: var(--spacing-04);
+    width: var(--spacing-04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.icon-mode {
+      @include ltr-rtl(
+        transform,
+        scale(0.8) translate(8px, -8px),
+        scale(0.8) translate(-8px, -8px)
+      );
+      position: absolute;
+    }
+  }
+  &.child {
+    --start-offset: var(--spacing-05);
+    padding-inline-start: var(--start-offset);
+  }
+  &:not(.no-hover-affect):hover,
+  &.active {
+    background-color: var(--pri-100);
+  }
+  &.active {
+    color: var(--pri-500);
+  }
+
+  & > .router-link {
+    display: block;
+    padding-bottom: var(--spacing-04);
+    color: var(--gray-900);
+
+    &.router-link-active {
+      color: var(--link-active);
+    }
+
+    &-item-icon {
+      transform: translateY(23%);
+      margin-inline-end: 0.5em;
+    }
+  }
+}

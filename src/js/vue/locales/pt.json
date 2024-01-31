@@ -1,0 +1,182 @@
+{
+  "ok": "OK",
+  "cancel": "Cancelar",
+  "yes": "Sim",
+  "general": {
+    "no_results": "Sem resultados",
+    "no_results_for": "Nenhum resultado para '{key}'",
+    "no_options": "Nenhuma opção disponível",
+    "clear": "Limpar",
+    "selections": "Não há seleções| 1 seleção|{count} seleções",
+    "type_new_option": "Digite uma nova opção para adicionar",
+    "create_new_option": "Criar uma nova opção",
+    "advanced": "Avançado",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "section": "Seção",
+    "add": "Adicionar",
+    "mandatory": "Obrigatório",
+    "search": "Pesquisar",
+    "yes": "Sim",
+    "no": "não",
+    "option": "Opcional",
+    "powered_by": "Powered by",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "submit": "Encaminhar",
+    "name": "Nome",
+    "label": "Etiqueta",
+    "value": "Valor",
+    "ok": "OK"
+  },
+  "errors": {
+    "unique": "O valor deve ser único"
+  },
+  "empty_state_message": {
+    "title": "Hmm... está vazio aqui",
+    "description": "Não seja tímido, comece a reportar e preencha a tabela",
+    "action_text": "Adicionar novo registro",
+    "alt_image": "Não há registros."
+  },
+  "file_upload": {
+    "errors": {
+      "title": "Falha ao fazer upload de arquivos",
+      "quantity_files_error": "Não é possível fazer o upload de mais de {count} arquivos.",
+      "size_file_error": "O arquivo excede {tamanho} MB. Selecione arquivos menores.| Um ou mais arquivos excedem {tamanho} MB. Selecione arquivos menores.",
+      "type_file_error": "Arquivos de tipo {type} não são compatíveis. Faça o upload de {extensions}"
+    },
+    "attach_photos": "Anexar fotos",
+    "uploading": "Fazer upload de arquivos",
+    "add_logo": "Adicionar logo",
+    "delete": "Excluir",
+    "change": "Alterar"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "Não há fotos | 1 foto | {count} fotos"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "Resultados por página:",
+      "showing_items": "Não há itens para mostrar | Mostrando 1 item de {totalItems} itens | Mostrando {startIndex}-{endIndex} de {totalItems} itens"
+    }
+  },
+  "certifications": {
+    "rename_section": "Renomear",
+    "delete_section": "Excluir seção"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "Id do elemento",
+      "unique": "O Id do elemento já está em uso",
+      "valid_element_id_format": {
+        "title": "O Id do elemento contém caracteres que não são suportados",
+        "body": "Caracteres suportados: “a-z”, “A-Z”, “0-9”, “-” e “_”"
+      },
+      "hint": "Para serviços externos, usa-se um ID exclusivo para identificar o elemento\nCaracteres suportados: “a-z”, “A-Z”, “0-9”, “-” e “_”"
+    },
+    "publish": "Publicar",
+    "save": "Salvar alterações",
+    "edit": "Editar",
+    "apply": "Aplicar",
+    "question": "Pergunta",
+    "add_section": "+ Adicionar seção",
+    "add_question": "Adicionar",
+    "add_question_title": "Adicionar pergunta",
+    "stack_add_stack_title": "Adicionar pergunta à pilha",
+    "add_units": "Adicionar unidades",
+    "choose_units": "Escolher unidades",
+    "clear_units": "Apagar unidades",
+    "edit_question_title": "Editar pergunta",
+    "edit_question": "Salvar",
+    "rename_question": "Editar",
+    "delete_question": "Excluir pergunta",
+    "edit_stack": "Editar pilha",
+    "delete_stack": "Excluir pilha",
+    "delete_confirm_text": "Excluir",
+    "delete_cancel_text": "Cancelar",
+    "delete_question_title": "Excluir pergunta",
+    "delete_question_content_popup": "Tem certeza de que deseja excluir?",
+    "cancel": "Cancelar",
+    "make_repeatable": "Tornar repetível",
+    "repeatable_description": "Proporciona a capacidade de responder à pilha várias vezes",
+    "create_section_title": "Nova seção",
+    "create_section_confirm_text": "Adicionar",
+    "create_section_section_name": "Nome da seção",
+    "update_section_title": "Renomear seção",
+    "update_section_confirm_text": "Salvar",
+    "delete_section_title": "Excluir seção",
+    "delete_section_content_popup": "Excluir uma seção fará com que todas as perguntas nela contidas sejam apagadas.\nTem certeza de que deseja excluir?",
+    "delete_stack_title": "Excluir pilha",
+    "delete_stack_content_popup": "Tem certeza de que deseja excluir?",
+    "questions_configuration": {
+      "text": {
+        "title": "Texto",
+        "subtype_short_answer": "Resposta curta",
+        "subtype_paragraph": "Parágrafo"
+      },
+      "choice": {
+        "title": "Escolher",
+        "subtype_boolean": "Sim/Não",
+        "subtype_multi_choice": "Múltipla escolha",
+        "subtype_single_choice": "Escolha Única"
+      },
+      "number": {
+        "title": "Número",
+        "subtype_numeric": "Numérico",
+        "subtype_slider": "Slider",
+        "subtype_range_slider": "Range Slider"
+      },
+      "coming_soon": "Em breve"
+    },
+    "question_types": {
+      "question": "Pergunta",
+      "stack": "Pilha de perguntas"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "Sim",
+          "no": "Não"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "Você não pode publicar com uma seção vazia",
+        "description": "Adicione perguntas à seção vazia ou a remova e tente novamente."
+      },
+      "duplicate_section_name": "Este nome de seção já existe"
+    },
+    "short_text_placeholder": "Sua Resposta",
+    "long_text_placeholder": "Sua Resposta",
+    "numeric_text_placeholder": "Sua Resposta",
+    "select_category": "Selecionar categoria",
+    "sections_overview": {
+      "content_length": "Sem perguntas | 1 pergunta | {count} perguntas"
+    },
+    "new_field_popup": {
+      "name_field_label": "Pergunta"
+    },
+    "edit_options": "Editar opções"
+  },
+  "dynamic_form": {
+    "repeat_stack": "Adicionar outro"
+  },
+  "image_slider": {
+    "previous_image": "Imagem anterior",
+    "next_image": "Próxima imagem"
+  },
+  "at_translations": {
+    "original_text": "Texto original",
+    "add_translation": "Adicionar tradução",
+    "no_translation": "Digite sua mensagem em outro idioma",
+    "delete": "Deletar"
+  },
+  "at_stepper_section_header": {
+    "completed": "Finalizado",
+    "default_unit_count": "0 passos | 1 passo | {count} passos",
+    "default_unit_name": "passos"
+  }
+}

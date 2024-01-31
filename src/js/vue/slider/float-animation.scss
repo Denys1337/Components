@@ -1,0 +1,16 @@
+.float-rtl-enter-active,
+.float-rtl-leave-active,
+.float-ltr-enter-active,
+.float-ltr-leave-active {
+  transform: translateX(var(--float-active)) !important;
+  transition: transform 0.5s ease !important;
+}
+
+.float-rtl-leave-to,
+.float-ltr-enter-from {
+  transform: translateX(var(--float-leave-to)) !important;
+}
+.float-rtl-enter-from,
+.float-ltr-leave-to {
+  transform: translateX(var(--float-enter-from)) !important;
+}

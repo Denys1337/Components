@@ -1,0 +1,38 @@
+unpublish feature tag:
+  stage: unpublish
+
+  tags:
+    - docker
+
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^[0-9]+\.[0-9]+\.[0-9]+\-([a-z0-9_]{1,20})\-delete$/'
+
+  script:
+    # Delete feature Tag, delete feature Tag and unpublish the
+    - NPM_PACKAGE_NAME=$(node -p "require('./package.json').name")
+    - NPM_PACKAGE_REGISTRY=$(node -p "require('./package.json').publishConfig.registry")
+    - NPM_PACKAGE_VERSION=$(node -p "require('./package.json').version")
+    # CI_COMMIT_TAG matches a DELETION feature NPM package publish
+    - TAG=${CI_COMMIT_TAG:0:-7}
+    - NPM_VERSION_PATH="${NPM_PACKAGE_NAME}@${TAG}"
+    - echo "${CI_COMMIT_TAG} matches a feature DELETION of '${NPM_VERSION_PATH}' from the NPM Registry and '${TAG}' Git Tag"
+
+
+    # Deleting Git tag
+    - echo "deleting '${TAG}' Tag"
+    - >
+      curl -H "Authorization: Bearer ${OAUTH_TOKEN}" -X "DELETE" "https://gitlab.agritask.xyz/api/v4/projects/${CI_PROJECT_ID}/repository/tags/${TAG}"
+
+    # Deleting delete Git tag
+    - echo "deleting '${CI_COMMIT_TAG}' Tag"
+    - >
+      curl -H "Authorization: Bearer ${OAUTH_TOKEN}" -X "DELETE" "https://gitlab.agritask.xyz/api/v4/projects/${CI_PROJECT_ID}/repository/tags/${CI_COMMIT_TAG}"
+
+    # Deleting NPM package version from Nexus's registry
+    - echo "unpublishing '${NPM_VERSION_PATH}' from the NPM registry (CANCELED)"
+    - npm install -g typescript@4.0.3 ts-node
+    - yarn install
+    - >
+      node ./scripts/delete_npm_version.js --package=vue-components --version=${TAG} --user=${NEXUS_USER} --pw=${NEXUS_PASSWORD}
+      
+    - exit 0  

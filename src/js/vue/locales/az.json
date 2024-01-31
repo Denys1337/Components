@@ -1,0 +1,182 @@
+{
+  "ok": "Aydındır",
+  "cancel": "Ləğv et",
+  "yes": "Bəli",
+  "general": {
+    "no_results": "Nəticə yoxdur",
+    "no_results_for": "'{key}’ üçün nəticə yoxdur",
+    "no_options": "Seçim yoxdur",
+    "clear": "Təmizlə",
+    "selections": "Seçim edilməyib |1 seçim|{count} seçim",
+    "type_new_option": "Əlavə etmək üçün yeni seçim daxil et",
+    "create_new_option": "Yeni seçim yarat",
+    "advanced": "Təkmilləşdirilmiş parametrlər",
+    "cancel": "Ləğv et",
+    "save": "Yadda saxla",
+    "section": "Bölmə",
+    "add": "Əlavə et",
+    "mandatory": "Məcburidir",
+    "search": "Axtarış",
+    "yes": "Bəli",
+    "no": "xeyr",
+    "option": "Seçim",
+    "powered_by": "Texnoloji dəstək",
+    "next": "Növbəti",
+    "previous": "Əvvəlki",
+    "submit": "Göndər",
+    "name": "Ad",
+    "label": "Etiket",
+    "value": "Dəyər",
+    "ok": "Aydındır"
+  },
+  "errors": {
+    "unique": "Dəyər unikal olmalıdır"
+  },
+  "empty_state_message": {
+    "title": "Görünür, bura boşdur",
+    "description": "Çəkinməyin, məruzə etməyə və cədvəli doldurmağa başlayın",
+    "action_text": "Yeni qeyd əlavə et",
+    "alt_image": "Qeyd yoxdur"
+  },
+  "file_upload": {
+    "errors": {
+      "title": "Fayllar yüklənmədi",
+      "quantity_files_error": "Maksimal {count} fayl yükləmək mümkündür.",
+      "size_file_error": "Fayl {ölçü} Mb-dan böyükdür. Daha kiçik fayllar seçin.| Bir və ya daha çox fayl {ölçü} Mb-dan böyükdür. Daha kiçik fayllar seçin.",
+      "type_file_error": "Fayl növü {type} dəstəklənmir, {extensions} yükləyin"
+    },
+    "attach_photos": "Fotoşəkillər əlavə et",
+    "uploading": "Fayllar yüklənir",
+    "add_logo": "Loqo əlavə et",
+    "delete": "Sil",
+    "change": "Dəyiş"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "Fotoşəkil yoxdur | 1 fotoşəkil | {count} fotoşəkil"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "Səhifə üzrə nəticələr:",
+      "showing_items": "Göstəriləcək predmet yoxdur | {totalItems} predmetdən 1-i göstərilir | {totalItems} predmetdən {startIndex}-{endIndex} aralığı göstərilir"
+    }
+  },
+  "certifications": {
+    "rename_section": "Yenidən adlandır",
+    "delete_section": "Bölməni sil"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "Elementin ID-si",
+      "unique": "Elementin ID-si artıq istifadə olunur",
+      "valid_element_id_format": {
+        "title": "Elementin ID-sində dəstəklənməyən simvollar var",
+        "body": "Dəstəklənən simvollar: 'a-z', 'A-Z', '0-9', '-' və '_'"
+      },
+      "hint": "Unikal ID elementin xarici xidmətlərdə identifikasiya edilməsi üçün istifadə olunur.\nDəstəklənən simvollar: 'a-z', 'A-Z', '0-9', '-' və '_'"
+    },
+    "publish": "Dərc et",
+    "save": "Dəyişiklikləri yadda saxla",
+    "edit": "Redaktə et",
+    "apply": "Tətbiq et",
+    "question": "Sual",
+    "add_section": "+ Bölmə əlavə et",
+    "add_question": "Əlavə et",
+    "add_question_title": "Sual əlavə et",
+    "stack_add_stack_title": "Dəstə sual əlavə et",
+    "add_units": "Vahidlər əlavə et",
+    "choose_units": "Vahidləri seç",
+    "clear_units": "Vahidləri təmizlə",
+    "edit_question_title": "Sualı redaktə et",
+    "edit_question": "Yadda saxla",
+    "rename_question": "Redaktə et",
+    "delete_question": "Sualı sil",
+    "edit_stack": "Dəsti redaktə et",
+    "delete_stack": "Dəsti sil",
+    "delete_confirm_text": "Sil",
+    "delete_cancel_text": "Ləğv et",
+    "delete_question_title": "Sualı sil",
+    "delete_question_content_popup": "Silmək istədiyinizə əminsiniz?",
+    "cancel": "Ləğv et",
+    "make_repeatable": "Təkrarla",
+    "repeatable_description": "Dəstə bir neçə dəfə cavab vermək imkanı verir",
+    "create_section_title": "Yeni bölmə",
+    "create_section_confirm_text": "Əlavə et",
+    "create_section_section_name": "Bölmənin adı",
+    "update_section_title": "Bölmənin adını dəyiş",
+    "update_section_confirm_text": "Yadda saxla",
+    "delete_section_title": "Bölməni sil",
+    "delete_section_content_popup": "Bölmənin silinməsi bölmədəki bütün sualları siləcək.\nBunu etmək istədiyinizə əminsiniz?",
+    "delete_stack_title": "Dəsti sil",
+    "delete_stack_content_popup": "Silmək istədiyinizə əminsiniz?",
+    "questions_configuration": {
+      "text": {
+        "title": "Mətn",
+        "subtype_short_answer": "Qısa cavab",
+        "subtype_paragraph": "Paraqraf"
+      },
+      "choice": {
+        "title": "Seçim",
+        "subtype_boolean": "Bəli/xeyr",
+        "subtype_multi_choice": "Bir neçə seçim",
+        "subtype_single_choice": "Bir seçim"
+      },
+      "number": {
+        "title": "Rəqəm",
+        "subtype_numeric": "Rəqəm",
+        "subtype_slider": "Slayder",
+        "subtype_range_slider": "Diapazon slayderi"
+      },
+      "coming_soon": "Tezliklə"
+    },
+    "question_types": {
+      "question": "Sual",
+      "stack": "Suallar dəsti"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "Bəli",
+          "no": "Xeyr"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "Boş bölmə ilə dərc edə bilməzsiniz",
+        "description": "Boş bölməyə suallar əlavə edin və ya onu silib yenidən cəhd edin."
+      },
+      "duplicate_section_name": "Bölmənin adı artıq mövcuddur"
+    },
+    "short_text_placeholder": "Cavabınız",
+    "long_text_placeholder": "Cavabınız",
+    "numeric_text_placeholder": "Cavabınız",
+    "select_category": "Kateqoriya seç",
+    "sections_overview": {
+      "content_length": "Sual yoxdur | 1 sual | {count} sual"
+    },
+    "new_field_popup": {
+      "name_field_label": "Sual"
+    },
+    "edit_options": "Seçimləri redaktə et"
+  },
+  "dynamic_form": {
+    "repeat_stack": "Başqasını əlavə et"
+  },
+  "image_slider": {
+    "previous_image": "Əvvəlki təsvir",
+    "next_image": "Növbəti təsvir"
+  },
+  "at_translations": {
+    "original_text": "Orijinal mətn",
+    "add_translation": "Tərcümə əlavə et",
+    "no_translation": "Mesajını başqa dildə daxil et",
+    "delete": "Sil"
+  },
+  "at_stepper_section_header": {
+    "completed": "Tamamlanıb",
+    "default_unit_count": "0 addım | 1 addım | {count} addım",
+    "default_unit_name": "addımlar"
+  }
+}

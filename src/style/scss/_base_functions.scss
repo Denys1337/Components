@@ -1,0 +1,19 @@
+@use 'sass:math';
+
+// also replaces rem-calc
+@function pxToRem($px) {
+  @return #{math.div($px, 16)}rem;
+}
+
+@function pxToEm($px) {
+  @return #{math.div($px, 16)}em;
+}
+
+// Change color of SVG icon
+@mixin changeSvgColor($color) {
+  svg {
+    path {
+      fill: $color;
+    }
+  }
+}

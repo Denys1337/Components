@@ -1,0 +1,41 @@
+.AtInput {
+  box-sizing: border-box;
+  display: flex;
+
+  > .input:focus-visible {
+    outline: none;
+  }
+  > .input {
+    width: 100%;
+    border: none;
+    background: var(--background-color);
+    border-radius: var(--input-border-radius);
+    line-height: normal;
+
+    &[type='text'] {
+      font-size: inherit;
+    }
+    &::placeholder {
+      color: var(--gray-600);
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+
+    &[type='number'] {
+      -moz-appearance: textfield;
+    }
+  }
+}
+
+.AtInput[disabled='disabled'] {
+  border-color: var(--greyBA);
+
+  input,
+  label {
+    cursor: not-allowed;
+  }
+}

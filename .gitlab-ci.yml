@@ -1,0 +1,22 @@
+# ===================================
+# DO NOT PUT HERE ANY ACTUAL ACTIONS!
+# ===================================
+
+image: node:16
+
+stages:
+  - validation
+  - test
+  - demo
+  - publish
+  - unpublish
+
+variables:
+  RELEASE_BRANCH: 'release'
+  DEV_BRANCH: 'dev'
+
+include:
+  - ci-validate.yml
+  - ci-demo.yml
+  - ci-publish.yml
+  - ci-unpublish.yml

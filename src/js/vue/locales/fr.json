@@ -1,0 +1,182 @@
+{
+  "ok": "OK",
+  "cancel": "Annuler",
+  "yes": "Oui",
+  "general": {
+    "no_results": "Aucun résultat",
+    "no_results_for": "Aucun résultat pour '{key}'",
+    "no_options": "Aucune option disponible",
+    "clear": "Effacer",
+    "selections": "Aucune sélection|1 sélection|{count} sélections",
+    "type_new_option": "Saisissez une nouvelle option à ajouter",
+    "create_new_option": "Créer une nouvelle option",
+    "advanced": "Avancée",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "section": "Section",
+    "add": "Ajouter",
+    "mandatory": "Obligatoire",
+    "search": "Rechercher",
+    "yes": "Oui",
+    "no": "non",
+    "option": "Option",
+    "powered_by": "Conçu par",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Envoyer",
+    "name": "Nom",
+    "label": "Libellé",
+    "value": "Valeur",
+    "ok": "OK"
+  },
+  "errors": {
+    "unique": "La valeur doit être unique"
+  },
+  "empty_state_message": {
+    "title": "Hmm... c'est vide ici",
+    "description": "N'hésitez pas, commencez à rapporter et remplir la page",
+    "action_text": "Ajouter un nouvel enregistrement",
+    "alt_image": "Aucun enregistrement"
+  },
+  "file_upload": {
+    "errors": {
+      "title": "Échec de transfert des fichiers",
+      "quantity_files_error": "Impossible de transférer plus de {count} fichiers.",
+      "size_file_error": "Le fichier dépasse {size} MB, veuillez sélectionner des fichiers plus petits.| Un ou plusieurs fichiers dépassent {size} MB. Veuillez sélectionner des fichiers plus petits.",
+      "type_file_error": "Le type de fichier {type} n’est pas pris en charge. Veuillez transférer des fichiers {extensions}"
+    },
+    "attach_photos": "Joindre des photos",
+    "uploading": "Transfert des fichiers en cours",
+    "add_logo": "Ajouter un logo",
+    "delete": "Supprimer",
+    "change": "Modifier"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "Aucune photo | 1 photo | {count} photos"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "Résultats par page:",
+      "showing_items": "Aucun élément à afficher | 1 élément de {totalItems} éléments affiché | {startIndex}-{endIndex} sur {totalItems} éléments affichés"
+    }
+  },
+  "certifications": {
+    "rename_section": "Renommer",
+    "delete_section": "Supprimer la section"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "Identifiant de l’élément",
+      "unique": "L’identifiant de l’élément est déjà utilisé",
+      "valid_element_id_format": {
+        "title": "L’identifiant de l’élément contient des caractères non pris en charge",
+        "body": "Caractères pris en charge : « a-z », « A-Z », « 0-9 », « - » et « _ »"
+      },
+      "hint": "L’identifiant unique est utilisé pour identifier l’élément pour les services externes.\nCaractères pris en charge :« a-z », « A-Z », « 0-9 », « - » et « _ »"
+    },
+    "publish": "Publier",
+    "save": "Enregistrer les modifications",
+    "edit": "Modifier",
+    "apply": "Appliquer",
+    "question": "Question",
+    "add_section": "+ Ajouter une section",
+    "add_question": "Ajouter",
+    "add_question_title": "Ajouter une question",
+    "stack_add_stack_title": "Ajouter une question à la pile",
+    "add_units": "Ajouter des unités",
+    "choose_units": "Choisir des unités",
+    "clear_units": "Retirer des unités",
+    "edit_question_title": "Modifier la question",
+    "edit_question": "Enregistrer",
+    "rename_question": "Modifier",
+    "delete_question": "Supprimer la question",
+    "edit_stack": "Modifier la pile",
+    "delete_stack": "Supprimer la pile",
+    "delete_confirm_text": "Supprimer",
+    "delete_cancel_text": "Annuler",
+    "delete_question_title": "Supprimer la question",
+    "delete_question_content_popup": "Voulez-vous vraiment supprimer ?",
+    "cancel": "Annuler",
+    "make_repeatable": "Rendre reproductible",
+    "repeatable_description": "Permet de répondre plusieurs fois à la pile",
+    "create_section_title": "Nouvelle section",
+    "create_section_confirm_text": "Ajouter",
+    "create_section_section_name": "Nom de la section",
+    "update_section_title": "Renommer la section",
+    "update_section_confirm_text": "Enregistrer",
+    "delete_section_title": "Supprimer la section",
+    "delete_section_content_popup": "La suppression d’une section supprimera toutes les questions y figurant.\nVoulez-vous vraiment procéder à la suppression ?",
+    "delete_stack_title": "Supprimer la pile",
+    "delete_stack_content_popup": "Voulez-vous vraiment supprimer ?",
+    "questions_configuration": {
+      "text": {
+        "title": "Texte",
+        "subtype_short_answer": "Réponse courte",
+        "subtype_paragraph": "Paragraphe"
+      },
+      "choice": {
+        "title": "Choix",
+        "subtype_boolean": "Oui/non",
+        "subtype_multi_choice": "Choix multiple",
+        "subtype_single_choice": "Choix unique"
+      },
+      "number": {
+        "title": "Numéro",
+        "subtype_numeric": "Numérique",
+        "subtype_slider": "Curseur",
+        "subtype_range_slider": "Curseur numérique"
+      },
+      "coming_soon": "Prochainement"
+    },
+    "question_types": {
+      "question": "Question",
+      "stack": "Pile de questions"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "Oui",
+          "no": "Non"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "Vous ne pouvez pas publier avec une section vide",
+        "description": "Ajoutez des questions à la section vide ou supprimez-la et réessayez."
+      },
+      "duplicate_section_name": "Ce nom de section existe déjà"
+    },
+    "short_text_placeholder": "Votre réponse",
+    "long_text_placeholder": "Votre réponse",
+    "numeric_text_placeholder": "Votre réponse",
+    "select_category": "Sélectionner une catégorie",
+    "sections_overview": {
+      "content_length": "Pas de question | 1 question | {count} questions"
+    },
+    "new_field_popup": {
+      "name_field_label": "Question"
+    },
+    "edit_options": "Modifier les options"
+  },
+  "dynamic_form": {
+    "repeat_stack": "Ajouter une autre option"
+  },
+  "image_slider": {
+    "previous_image": "Image précédente",
+    "next_image": "Image suivante"
+  },
+  "at_translations": {
+    "original_text": "Texte d’origine",
+    "add_translation": "Ajouter une traduction",
+    "no_translation": "Tapez votre message dans une autre langue",
+    "delete": "Supprimer"
+  },
+  "at_stepper_section_header": {
+    "completed": "Terminé",
+    "default_unit_count": "0 étape | 1 étape | {count} étapes",
+    "default_unit_name": "étapes"
+  }
+}

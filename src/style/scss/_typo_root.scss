@@ -1,0 +1,78 @@
+//---- font weights {"component": "FontVarVisualizer", "property":"font-weight"}
+:root {
+  --font-light: 200;
+  --font-normal: 400;
+  --font-medium: 600;
+  --font-semi-bold: 600;
+  --font-bold: 600;
+  --font-bolder: 800;
+
+  //---- font sizes {"component": "FontVarVisualizer", "property":"font-size"}
+  --font-size-xxx-large: 2.5rem;
+  --font-size-xx-large: 2rem;
+  --font-size-x-large: 1.5rem;
+  --font-size-large: 1.25rem;
+  --font-size-x-medium: 1.125rem;
+  --font-size-medium: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-x-small: 0.75rem;
+
+  //---- line height {"property": "line-height"}
+  --line-height-xxx-large: 3rem;
+  --line-height-xx-large: 2.5rem;
+  --line-height-x-large: 2rem;
+  --line-height-large: 1.5rem;
+  --line-height-medium: 1.5rem;
+  --line-height-small: 1.25rem;
+  --line-height-x-small: 1rem;
+
+  //---- descriptive font weights {"component": "FontVarVisualizer", "property":"font-size"}
+  --font-weight-title-xxx-large: var(--font-bold);
+  --font-weight-title-xx-large: var(--font-bold);
+  --font-weight-title-x-large: var(--font-bold);
+  --font-weight-title-large: var(--font-semi-bold);
+  --font-weight-title-medium: var(--font-semi-bold);
+  --font-weight-body-default: var(--font-normal);
+  --font-weight-body-default-b: var(--font-semi-bold);
+  --font-weight-body-small: var(--font-normal);
+  --font-weight-body-small-b: var(--font-semi-bold);
+  --font-weight-tag: var(--font-semi-bold);
+  --font-weight-subtext: var(--font-normal);
+  --font-weight-subtext-b: var(--font-medium);
+
+  //---- descriptive font sizes {"component": "FontVarVisualizer", "property":"font-size"}
+  --font-size-title-xxx-large: var(--font-size-xxx-large);
+  --font-size-title-xx-large: var(--font-size-xx-large);
+  --font-size-title-x-large: var(--font-size-x-large);
+  --font-size-title-large: var(--font-size-large);
+  --font-size-title-medium: var(--font-size-x-medium);
+  --font-size-body-default: var(--font-size-medium);
+  --font-size-body-default-b: var(--font-size-medium);
+  --font-size-body-small: var(--font-size-small);
+  --font-size-body-small-b: var(--font-size-small);
+  --font-size-tag: var(--font-size-x-small);
+  --font-size-subtext: var(--font-size-x-small);
+  --font-size-subtext-b: var(--font-size-x-small);
+
+  --line-height-xxx-large: 3rem;
+  --line-height-xx-large: 2.5rem;
+  --line-height-x-large: 2rem;
+  --line-height-large: 1.5rem;
+  --line-height-medium: 1.5rem;
+  --line-height-small: 1.25rem;
+  --line-height-x-small: 1rem;
+
+  //---- descriptive line height {"property": "line-height"}
+  --line-height-title-xxx-large: var(--line-height-xxx-large);
+  --line-height-title-xx-large: var(--line-height-xx-large);
+  --line-height-title-x-large: var(--line-height-x-large: );
+  --line-height-title-large: var(--line-height-large);
+  --line-height-title-medium: var(--line-height-medium);
+  --line-height-body-default: var(--line-height-medium);
+  --line-height-body-default-b: var(--line-height-medium);
+  --line-height-body-small: var(--line-height-small);
+  --line-height-body-small-b: var(--line-height-small);
+  --line-height-tag: var(--line-height-x-small);
+  --line-height-subtext: var(--line-height-x-small);
+  --line-height-subtext-b: var(--line-height-x-small);
+}

@@ -1,0 +1,22 @@
+.agritask-icon[class*='icon-']:before {
+  font-family: agritask-font !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ai-x0:before {
+  font-size: 1rem; // default size
+}
+
+.ai-x1:before {
+  font-size: 1.5rem; // default size
+}
+
+.ai-x2:before {
+  font-size: 2rem; // default size
+}

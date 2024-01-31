@@ -1,0 +1,132 @@
+validate merge to release:
+  # attempt to merge to "release" - can only merge from "dev" and NPM version is new + NPM version must be new
+  stage: validation
+
+  tags:
+    - docker
+
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == $RELEASE_BRANCH'
+
+  script:
+    - |
+      if [ $CI_COMMIT_REF_NAME != $DEV_BRANCH ]; then
+        echo "Merge to '${RELEASE_BRANCH}' is NOT allowed from '${CI_COMMIT_REF_NAME}'. only from branch '${DEV_BRANCH}'."
+        exit 1
+      fi
+    - echo "Merge to ${RELEASE_BRANCH} is allowed for branch '${DEV_BRANCH}'."
+    # Check NPM package version is not in the registery version
+    - echo "Validating version ${NPM_PACKAGE_VERSION} is new to NPM registry"
+    - NPM_PACKAGE_NAME=$(node -p "require('./package.json').name")
+    - NPM_PACKAGE_VERSION=$(node -p "require('./package.json').version")
+    - NPM_PACKAGE_REGISTRY=$(node -p "require('./package.json').publishConfig.registry")
+
+    - |
+      if [[ $(npm view "${NPM_PACKAGE_NAME}" versions) == *"'${NPM_PACKAGE_VERSION}'"* ]]; then
+        echo "Version ${NPM_PACKAGE_VERSION} of ${NPM_PACKAGE_NAME} has already been published, so no new version has been published."
+        exit 1
+      fi
+
+publish:
+  stage: publish
+
+  tags:
+    - docker
+
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $RELEASE_BRANCH'
+
+  script:
+    # Publish new vesion to NPM registry
+    - NPM_PACKAGE_NAME=$(node -p "require('./package.json').name")
+    - NPM_PACKAGE_REGISTRY=$(node -p "require('./package.json').publishConfig.registry")
+    - NPM_PACKAGE_VERSION=$(node -p "require('./package.json').version")
+
+    - npm install -g typescript@4.0.3 ts-node
+    - yarn install
+    - yarn run build:publish
+    - echo "Publishing version '${NPM_PACKAGE_VERSION}'"
+
+    # release branch
+    - echo "NPM publishing new release version"
+    - npm publish
+        
+    - echo "Creating a Gitlab Tag for release"
+    - >
+      curl -H "Authorization: Bearer ${OAUTH_TOKEN}" -X "POST" "https://gitlab.agritask.xyz/api/v4/projects/${CI_PROJECT_ID}/repository/tags?tag_name=v${NPM_PACKAGE_VERSION}&ref=${RELEASE_BRANCH}"
+
+    - echo "Creating a Gitlab Release from Tag"
+    - >
+        curl -H "Authorization: Bearer ${OAUTH_TOKEN}" -H "Content-Type: application/json" -X "POST"
+        --data "{ \"name\": \"v${NPM_PACKAGE_VERSION}\", \"tag_name\": \"v${NPM_PACKAGE_VERSION}\", \"description\": \"automated release of version ${NPM_PACKAGE_VERSION}\" }"
+        "https://gitlab.agritask.xyz/api/v4/projects/${CI_PROJECT_ID}/releases"
+
+    - yarn cleanup:indexes
+    - echo "Successfully published '${NPM_PACKAGE_NAME}' version ${NPM_PACKAGE_VERSION} to NPM registry ${NPM_PACKAGE_REGISTRY}"
+    - exit 0
+
+
+publish from tag:
+  stage: publish
+
+  tags:
+    - docker
+
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^[0-9]+\.[0-9]+\.[0-9]+\-(hotfix)\.[0-9]+$/'
+    - if: '$CI_COMMIT_TAG =~ /^[0-9]+\.[0-9]+\.[0-9]+\-([a-z0-9_-]{1,20})$/'
+    
+
+  script:
+    # publishing a hotfix/feature version to NPM registry after creating a Git Tag
+    - NPM_PACKAGE_NAME=$(node -p "require('./package.json').name")
+    - NPM_PACKAGE_REGISTRY=$(node -p "require('./package.json').publishConfig.registry")
+    - NPM_PACKAGE_VERSION=$(node -p "require('./package.json').version")
+
+    - TAG_NAME=null
+    - NPM_VERSION=null
+    - IS_HOTFIX="false"
+    - |
+      if [[ $CI_COMMIT_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+\-(hotfix)\.[0-9]+$ ]]; then
+        # CI_COMMIT_TAG matches a release hotfix NPM package publish
+        echo "CI_COMMIT_TAG matches a release hotfix (${CI_COMMIT_TAG}) NPM package publish"
+        IS_HOTFIX="true"
+        TAG_NAME="hotfix"
+      elif [[ $CI_COMMIT_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+\-([a-z0-9_-]{1,20})$ ]]; then
+        # CI_COMMIT_TAG matches a feature NPM package publish
+        echo "CI_COMMIT_TAG matches a feature (${CI_COMMIT_TAG}) NPM package publish"
+        node ./scripts/version-change.js $CI_COMMIT_TAG
+        NPM_PACKAGE_VERSION=$CI_COMMIT_TAG
+        IS_HOTFIX="false"
+        NPM_VERSION=$CI_COMMIT_TAG
+        TAG_NAME="feature"
+      else
+        # CI_COMMIT_TAG DOESN'T match
+        echo "CI_COMMIT_TAG '${CI_COMMIT_TAG}' not matching rules 'hotfix' nor 'feature' Tag name"
+        exit 1
+      fi
+
+    - |
+      if [[ $IS_HOTFIX == "true" && $NPM_PACKAGE_VERSION != $CI_COMMIT_TAG ]]; then
+        echo "when deploying release hotfix NPM package version ('${NPM_PACKAGE_VERSION}') must match Tag name ('${CI_COMMIT_TAG}')!"
+        exit 1
+      fi
+
+    - npm install -g typescript@4.0.3 ts-node
+    - yarn install
+    - yarn build:publish
+    - echo "Publishing tag '${TAG_NAME}' version ${NPM_PACKAGE_VERSION} '${NPM_PACKAGE_VERSION}'"
+
+    - |
+      if [[ IS_HOTFIX == "true" ]]; then
+        echo "NPM publishing hotfix version"
+        npm publish --tag hotfix
+      else
+        echo "NPM publishing feature version"
+        npm publish --tag feature
+      fi
+
+    - yarn cleanup:indexes
+    - echo "Successfully published ${TAG_NAME} of '${NPM_PACKAGE_NAME}' version '${NPM_PACKAGE_VERSION}' to NPM registry ${NPM_PACKAGE_REGISTRY}"
+    - echo "import cmd 'yarn add ${NPM_PACKAGE_NAME}@${NPM_PACKAGE_VERSION}'"
+    - exit 0

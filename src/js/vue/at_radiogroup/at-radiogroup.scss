@@ -1,0 +1,25 @@
+.AtRadiogroup {
+  &.inline {
+    display: flex;
+    flex-direction: row;
+
+    .AtRadiobutton {
+      margin-inline-end: var(--spacing-08);
+    }
+  }
+
+  &.column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.two-columns {
+    display: flex;
+    flex-flow: row wrap;
+
+    .AtRadiobutton {
+      display: block;
+      flex-basis: 50%;
+    }
+  }
+}

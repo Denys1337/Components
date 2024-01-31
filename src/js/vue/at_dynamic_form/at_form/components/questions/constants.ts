@@ -1,0 +1,2 @@
+export const DEFAULT_MAX_LENGTH_SHORT = 256;
+export const DEFAULT_MAX_LENGTH_LONG = 800;

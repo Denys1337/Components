@@ -1,0 +1,8 @@
+{
+  "general": {
+    "no_results": "Brak wyników",
+    "no_options": "Brak dostępnych opcji",
+    "clear": "Wyczyść",
+    "selections": "Brak wyborów|1 wybór|{count} wyborów"
+  }
+}

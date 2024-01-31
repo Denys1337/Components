@@ -1,0 +1,9 @@
+:root {
+  --color-duration: 0.1s;
+  --transform-duration: 0.25s;
+  --transform-slow-duration: 0.5s;
+}
+
+.transform-transition {
+  transition: transform var(--transform-duration);
+}

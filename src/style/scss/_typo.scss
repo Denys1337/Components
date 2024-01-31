@@ -1,0 +1,101 @@
+@import 'typo_root';
+
+//----headline font classes
+.font-title-xxx-large {
+  font-size: var(--font-size-title-xxx-large);
+  line-height: var(--line-height-title-xxx-large);
+  font-weight: var(--font-weight-title-xxx-large);
+}
+
+.font-title-xx-large {
+  font-size: var(--font-size-title-xx-large);
+  line-height: var(--line-height-title-xx-large);
+  font-weight: var(--font-weight-title-xx-large);
+}
+
+.font-title-x-large {
+  font-size: var(--font-size-title-x-large);
+  line-height: var(--line-height-title-x-large);
+  font-weight: var(--font-weight-title-x-large);
+}
+
+.font-title-large {
+  font-size: var(--font-size-title-large);
+  line-height: var(--line-height-title-large);
+  font-weight: var(--font-weight-title-large);
+}
+
+.font-title-medium {
+  font-size: var(--font-size-title-medium);
+  line-height: var(--line-height-title-medium);
+  font-weight: var(--font-weight-title-medium);
+  letter-spacing: 1%;
+}
+
+//----paragraph font classes
+.font-body-default {
+  font-size: var(--font-size-body-default);
+  line-height: var(--line-height-body-default);
+  font-weight: var(--font-weight-body-default);
+}
+
+.font-body-default-b {
+  font-size: var(--font-size-body-default-b);
+  line-height: var(--line-height-body-default-b);
+  font-weight: var(--font-weight-body-default-b);
+}
+
+.font-body-small {
+  font-size: var(--font-size-body-small);
+  line-height: var(--line-height-body-small);
+  font-weight: var(--font-weight-body-small);
+}
+
+.font-body-small-b {
+  font-size: var(--font-size-body-small-b);
+  line-height: var(--line-height-body-small-b);
+  font-weight: var(--font-weight-body-small-b);
+}
+
+//----small font classes
+.font-tag {
+  font-size: var(--font-size-tag);
+  line-height: var(--line-height-tag);
+  font-weight: var(--font-weight-tag);
+  letter-spacing: 1.5%;
+  text-transform: uppercase;
+}
+
+.font-subtext {
+  font-size: var(--font-size-subtext);
+  line-height: var(--line-height-subtext);
+  font-weight: var(--font-weight-subtext);
+}
+
+.font-subtext-b {
+  font-size: var(--font-size-subtext-b);
+  line-height: var(--line-height-subtext-b);
+  font-weight: var(--font-weight-subtext-b);
+}
+
+//----weight classes
+.font-light {
+  --font-light: 200;
+}
+.font-normal {
+  --font-normal: 400;
+}
+.font-bold {
+  --font-bold: 600;
+}
+.font-bolder {
+  --font-bolder: 800;
+}
+
+$whiteSpaces: normal, nowrap, pre, pre-wrap, pre-line, break-spaces;
+
+@each $ws in $whiteSpaces {
+  .whitespace-#{$ws} {
+    white-space: $ws;
+  }
+}

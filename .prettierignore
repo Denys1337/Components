@@ -1,0 +1,13 @@
+.gradle
+node_modules
+web
+out
+build
+.storybook/build
+storybook/build
+public
+test/unit/coverage
+src/style/fonts
+src/style/icons
+coverage/
+*.yml

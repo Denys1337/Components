@@ -1,0 +1,135 @@
+.AtCard {
+  width: 100%;
+  border: solid 1px var(--gray-400);
+  border-radius: var(--spacing-02);
+  background-color: var(--white);
+  &.extended-clickable {
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  box-shadow: rgba(56, 65, 70, 0.04) 0px 2px 4px;
+  .description {
+    width: 100%;
+    height: 71px;
+    line-height: var(--line-height-medium);
+    word-break: break-word;
+    &.truncate {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .context-menu {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    color: var(--gray-800);
+  }
+}
+.AtCard-header {
+  padding-block-start: 0;
+  background-color: var(--white);
+  gap: var(--spacing-04);
+  .AtCard-title {
+    white-space: nowrap;
+  }
+  &.logo {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  &.border-bottom {
+    border-block-end: 1px solid var(--gray-400);
+  }
+}
+.AtCard-footer {
+  padding-block-end: 0;
+  background-color: var(--white);
+}
+
+.height-100 {
+  height: 100%;
+}
+.AtCardClickable {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+  color: var(--gray-1000);
+  border-radius: var(--spacing-02);
+  &.default-hover {
+    &:hover {
+      cursor: pointer;
+      .tabler-circle-plus {
+        color: var(--pri-500);
+        margin: unset;
+        transform: scale(2.1);
+        margin-block-end: 0;
+      }
+      .text {
+        display: none;
+      }
+    }
+  }
+  &.extended {
+    width: 100%;
+    &:hover {
+      background-color: var(--gray-200);
+      color: var(--pri-500);
+      &:active {
+        background-color: var(--gray-300);
+        color: var(--pri-600);
+      }
+    }
+    &.disabled {
+      border-color: var(--gray-300);
+      background-color: var(--gray-200);
+      color: var(--gray-600);
+      pointer-events: none;
+    }
+  }
+}
+.AtCardSkeleton {
+  width: 391px;
+  .logo {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  }
+  &-title {
+    height: 20px;
+    width: 230px;
+  }
+  &-subtitle {
+    @extend .AtCardSkeleton-title;
+    width: 100px;
+  }
+  &-footer {
+    padding-block-start: 1.875em;
+  }
+  &-description {
+    @extend .AtCardSkeleton-title;
+
+    width: 100%;
+  }
+  &-half-line {
+    @extend .AtCardSkeleton-description;
+    width: 200px;
+  }
+  .skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+    background-color: var(--gray-400);
+  }
+
+  @keyframes skeleton-loading {
+    0% {
+      opacity: 0.33;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

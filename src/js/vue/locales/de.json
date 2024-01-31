@@ -1,0 +1,182 @@
+{
+  "ok": "OK",
+  "cancel": "Abbrechen",
+  "yes": "Ja",
+  "general": {
+    "no_results": "Keine Ergebnisse",
+    "no_results_for": "Keine Ergebnisse für '{key}'",
+    "no_options": "Keine Option verfügbar",
+    "clear": "Löschen",
+    "selections": "Keine Auswahl|1 Auswahl|{count} ausgewählt",
+    "type_new_option": "Neue Option eingeben und hinzufügen",
+    "create_new_option": "Neue Option erstellen",
+    "advanced": "Fortgeschrittene",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "section": "Abschnitt",
+    "add": "Hinzufügen",
+    "mandatory": "Obligatorisch",
+    "search": "Suche",
+    "yes": "Ja",
+    "no": "Nein",
+    "option": "Option",
+    "powered_by": "Unterstützt von",
+    "next": "Nächste",
+    "previous": "Vorherige",
+    "submit": "Absenden",
+    "name": "Name",
+    "label": "Kennzeichnung",
+    "value": "Wert",
+    "ok": "OK"
+  },
+  "errors": {
+    "unique": "Der Wert sollte eindeutig sein"
+  },
+  "empty_state_message": {
+    "title": "Hmm ... kein Eintrag",
+    "description": "Beginnen Sie mit dem Bericht und füllen Sie die Tabelle aus.",
+    "action_text": "Neuen Datensatz hinzufügen",
+    "alt_image": "Es gibt keine Aufzeichnungen."
+  },
+  "file_upload": {
+    "errors": {
+      "title": "Dateien konnten nicht hochgeladen werden",
+      "quantity_files_error": "Es können nicht mehr als {count} Dateien hochgeladen werden.",
+      "size_file_error": "Datei ist größer als {size} MB, bitte wählen Sie kleinere Dateien aus.| Eine oder mehrere Dateien sind größer als {size} MB, bitte wählen Sie kleinere Dateien aus.",
+      "type_file_error": "Der Dateityp {type} wird nicht unterstützt. Bitte laden Sie {extensions} hoch"
+    },
+    "attach_photos": "Fotos anhängen",
+    "uploading": "Dateien werden hochgeladen",
+    "add_logo": "Logo hinzufügen",
+    "delete": "Löschen",
+    "change": "Ändern"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "Keine Fotos | 1 Foto | {count} Fotos"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "Ergebnisse pro Seite:",
+      "showing_items": "Keine zu zeigenden Elemente | Zeigt 1 Element von {totalItems} Elementen | Zeigt {startIndex}-{endIndex} von {totalItems} Elementen"
+    }
+  },
+  "certifications": {
+    "rename_section": "Umbenennen",
+    "delete_section": "Abschnitt löschen"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "Element-ID",
+      "unique": "Element-ID wird bereits verwendet",
+      "valid_element_id_format": {
+        "title": "Element-ID enthält nicht unterstützte Zeichen",
+        "body": "Unterstützte Zeichen: a-z, A-Z, 0-9, - und _"
+      },
+      "hint": "Eindeutige ID zur Identifizierung des Elements für externe Dienste. \u2028Unterstützte Zeichen: a-z, A-Z, 0-9, - und _"
+    },
+    "publish": "Veröffentlichen",
+    "save": "Änderungen speichern",
+    "edit": "Bearbeiten",
+    "apply": "Anwenden",
+    "question": "Frage",
+    "add_section": "+ Abschnitt hinzufügen",
+    "add_question": "Hinzufügen",
+    "add_question_title": "Frage hinzufügen",
+    "stack_add_stack_title": "Frage zum Stapel hinzufügen",
+    "add_units": "Einheiten hinzufügen",
+    "choose_units": "Einheiten auswählen",
+    "clear_units": "Einheiten löschen",
+    "edit_question_title": "Frage bearbeiten",
+    "edit_question": "Speichern",
+    "rename_question": "Bearbeiten",
+    "delete_question": "Frage löschen",
+    "edit_stack": "Stapel bearbeiten",
+    "delete_stack": "Stapel löschen",
+    "delete_confirm_text": "Löschen",
+    "delete_cancel_text": "Abbrechen",
+    "delete_question_title": "Frage löschen",
+    "delete_question_content_popup": "Sind Sie sicher, dass Sie dies löschen wollen?",
+    "cancel": "Abbrechen",
+    "make_repeatable": "Wiederholen",
+    "repeatable_description": "Bietet die Möglichkeit, den Stapel mehrmals zu beantworten",
+    "create_section_title": "Neuer Abschnitt",
+    "create_section_confirm_text": "Hinzufügen",
+    "create_section_section_name": "Name des Abschnitts",
+    "update_section_title": "Abschnitt umbenennen",
+    "update_section_confirm_text": "Speichern",
+    "delete_section_title": "Abschnitt löschen",
+    "delete_section_content_popup": "Wenn Sie einen Abschnitt löschen, werden alle Fragen in diesem Abschnitt gelöscht. Sind Sie sicher, dass Sie ihn löschen möchten?",
+    "delete_stack_title": "Stapel löschen",
+    "delete_stack_content_popup": "Sind Sie sicher, dass Sie ihn löschen wollen?",
+    "questions_configuration": {
+      "text": {
+        "title": "Text",
+        "subtype_short_answer": "Kurzantwort",
+        "subtype_paragraph": "Absatz"
+      },
+      "choice": {
+        "title": "Auswahl",
+        "subtype_boolean": "Ja/Nein",
+        "subtype_multi_choice": "Multiple Choice",
+        "subtype_single_choice": "Single Choice"
+      },
+      "number": {
+        "title": "Nummer",
+        "subtype_numeric": "Numerisch",
+        "subtype_slider": "Schieberegler",
+        "subtype_range_slider": "Schieberegler"
+      },
+      "coming_soon": "Demnächst verfügbar"
+    },
+    "question_types": {
+      "question": "Frage",
+      "stack": "Fragenstapel"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "Ja",
+          "no": "Nein"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "Die Veröffentlichung mit einem leeren Abschnitt ist nicht möglich",
+        "description": "Fügen Sie in dem leeren Abschnitt Fragen hinzu oder entfernen Sie ihn und versuchen Sie es erneut."
+      },
+      "duplicate_section_name": "Abschnittsname existiert bereits"
+    },
+    "short_text_placeholder": "Ihre Antwort",
+    "long_text_placeholder": "Ihre Antwort",
+    "numeric_text_placeholder": "Ihre Antwort",
+    "select_category": "Kategorie auswählen",
+    "sections_overview": {
+      "content_length": "Keine Fragen | 1 Frage | {count} Fragen"
+    },
+    "new_field_popup": {
+      "name_field_label": "Frage"
+    },
+    "edit_options": "Optionen bearbeiten"
+  },
+  "dynamic_form": {
+    "repeat_stack": "Weitere hinzufügen"
+  },
+  "image_slider": {
+    "previous_image": "Vorheriges Bild",
+    "next_image": "Nächstes Bild"
+  },
+  "at_translations": {
+    "original_text": "Ursprünglicher Text",
+    "add_translation": "Übersetzung hinzufügen",
+    "no_translation": "Geben Sie Ihre Nachricht in einer anderen Sprache ein",
+    "delete": "Löschen"
+  },
+  "at_stepper_section_header": {
+    "completed": "Abgeschlossen",
+    "default_unit_count": "0 Schritte | 1 Schritt | {count} Schritte",
+    "default_unit_name": "Schritte"
+  }
+}

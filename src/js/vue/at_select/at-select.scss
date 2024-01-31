@@ -1,0 +1,122 @@
+@import '@style/scss/_base_functions';
+
+// General variables for AtSelect
+.AtSelect,
+.DropdownListContainer,
+.AtSelectBody {
+  --buttons-color: var(--mt-color);
+}
+
+.AtSelect {
+  --select-height: var(--input-height);
+  --font-size: 1rem;
+  font-size: var(--font-size);
+
+  > * {
+    height: inherit;
+  }
+
+  > * {
+    height: inherit;
+  }
+
+  > .width-inherit {
+    width: inherit;
+  }
+
+  &.at-grid {
+    row-gap: var(--spacing-03);
+  }
+
+  &.focused {
+    --label-color: var(--input-color-focus);
+  }
+
+  &.mt-disabled {
+    pointer-events: none;
+
+    .AtSelectBody {
+      &,
+      & label {
+        pointer-events: all;
+        cursor: default;
+      }
+      .AtSelectBody-buttons {
+        cursor: default;
+      }
+    }
+  }
+  .input-container-height {
+    height: var(--select-height);
+  }
+
+  .mt-container {
+    max-width: unset;
+    background-color: white;
+    height: 100%;
+  }
+
+  .AtSelectBody {
+    height: 100%;
+
+    & label {
+      cursor: pointer;
+    }
+
+    &-button {
+      outline: none;
+    }
+
+    .AtSelectBody-buttons {
+      cursor: pointer;
+    }
+  }
+
+  &.inline {
+    margin: 0.5rem;
+    --select-height: 32px;
+    min-width: none;
+    display: inline-flex;
+    .body-container {
+      background: var(--pri-100);
+      height: var(--select-height);
+      .AtSelectBody {
+        --buttons-color: var(--gray-1000);
+        width: fit-content;
+        .AtSelectBodyInlineLabel {
+          height: 100%;
+        }
+        &-label {
+          position: relative;
+          max-width: unset;
+          min-width: min-content;
+          background: transparent;
+          inset-inline-start: 0px;
+          padding-inline-start: 8px;
+          padding-inline-end: 24px;
+          &.mt-label {
+            font-weight: 600;
+            top: unset;
+            height: unset;
+          }
+        }
+      }
+    }
+    &.mt-disabled {
+      .AtSelectBody {
+        --buttons-color: var(--input-border-disabled);
+      }
+    }
+  }
+}
+
+.AtSelectDropdown-groups {
+  margin: 0;
+  > li {
+    margin: 0;
+  }
+}
+
+.empty-selection {
+  grid-column: span 12;
+}

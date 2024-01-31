@@ -1,0 +1,190 @@
+{
+  "ok": "OK",
+  "cancel": "Cancel",
+  "yes": "Yes",
+  "general": {
+    "no_results": "No results",
+    "no_results_for": "No results for '{key}'",
+    "no_options": "No options available",
+    "clear": "Clear",
+    "selections": "No selections|1 selection|{count} selections",
+    "type_new_option": "Type new option to add",
+    "create_new_option": "Create a new option",
+    "advanced": "Advanced",
+    "cancel": "Cancel",
+    "save": "Save",
+    "section": "Section",
+    "add": "Add",
+    "mandatory": "Mandatory",
+    "search": "Search",
+    "yes": "Yes",
+    "no": "no",
+    "option": "Option",
+    "powered_by": "Powered by",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "name": "Name",
+    "label": "Label",
+    "value": "Value",
+    "ok": "OK"
+  },
+  "errors": {
+    "unique": "The value should be unique"
+  },
+  "empty_state_message": {
+    "title": "Hmm... it's empty in here",
+    "description": "Don't be shy, start reporting and fill up the table",
+    "action_text": "Add new record",
+    "alt_image": "There are no records"
+  },
+  "file_upload": {
+    "errors": {
+      "title": "Failed to upload files",
+      "quantity_files_error": "Unable to upload more then {count} files.",
+      "size_file_error": "File exceeds {size} MB, Please select smaller files.| One or more files exceeds {size} MB, Please select smaller files.",
+      "type_file_error": "This file type is not supported. Supported formats are: {extensions}"
+    },
+    "attach_photos": "Attach photos",
+    "attach_files": "Attach files",
+    "uploading": "Uploading files",
+    "add_logo": "Add logo",
+    "delete": "Delete",
+    "change": "Change"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "No photos | 1 photo | {count} photos"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "Results per page:",
+      "showing_items": "No items to show | Showing 1 item of {totalItems} items | Showing {startIndex}-{endIndex} of {totalItems} items"
+    }
+  },
+  "certifications": {
+    "rename_section": "Rename",
+    "delete_section": "Delete section"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "Element id",
+      "unique": "Element ID is already in use",
+      "valid_element_id_format": {
+        "title": "Element ID contains unsupported characters",
+        "body": "Supported characters: 'a-z', 'A-Z', '0-9', '-' and '_'"
+      },
+      "hint": "Unique ID is used to identify the element for external services.\nSupported characters: 'a-z', 'A-Z', '0-9', '-' and '_'"
+    },
+    "stack_settings_popup": {
+      "title": "Stack settings",
+      "name": "Stack name",
+      "external_group_id": "External group id",
+      "external_group_id_tooltip": "A non unique ID used to identify the question for external services",
+      "repeatable": "Repeatable"
+    },
+    "publish": "Publish",
+    "save": "Save changes",
+    "edit": "Edit",
+    "apply": "Apply",
+    "question": "Question",
+    "add_section": "+ Add section",
+    "add_question": "Add",
+    "add_question_title": "Add question",
+    "add_stack_title": "Add stack of questions",
+    "stack_add_stack_title": "Add question to stack",
+    "add_units": "Add units",
+    "choose_units": "Choose units",
+    "clear_units": "Clear units",
+    "edit_question_title": "Edit question",
+    "edit_question": "Save",
+    "rename_question": "Edit",
+    "delete_question": "Delete question",
+    "stack_settings": "Stack settings",
+    "delete_stack": "Delete stack",
+    "delete_confirm_text": "Delete",
+    "delete_cancel_text": "Cancel",
+    "delete_question_title": "Delete question",
+    "delete_question_content_popup": "Are you sure you want to delete?",
+    "cancel": "Cancel",
+    "repeatable_description": "Provides ability to answer the stack several times",
+    "create_section_title": "New section",
+    "create_section_confirm_text": "Add",
+    "create_section_section_name": "Section name",
+    "update_section_title": "Rename section",
+    "update_section_confirm_text": "Save",
+    "delete_section_title": "Delete section",
+    "delete_section_content_popup": "Deleting a section will delete all questions in the section.\n Are you sure you want to delete?",
+    "delete_stack_title": "Delete stack",
+    "delete_stack_content_popup": "Are you sure you want to delete?",
+    "questions_configuration": {
+      "text": {
+        "title": "Text",
+        "subtype_short_answer": "Short answer",
+        "subtype_paragraph": "Paragraph"
+      },
+      "choice": {
+        "title": "Choice",
+        "subtype_boolean": "Yes/no",
+        "subtype_multi_choice": "Multi Choice",
+        "subtype_single_choice": "Single Choice"
+      },
+      "number": {
+        "title": "Number",
+        "subtype_numeric": "Numeric",
+        "subtype_slider": "Slider",
+        "subtype_range_slider": "Range Slider"
+      },
+      "coming_soon": "Coming soon"
+    },
+    "question_types": {
+      "question": "Question",
+      "stack": "Stack of questions"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "You cannot publish with an empty section",
+        "description": "Add questions to the empty section or remove it and try again."
+      },
+      "duplicate_section_name": "Section name already exists"
+    },
+    "short_text_placeholder": "Your Answer",
+    "long_text_placeholder": "Your Answer",
+    "numeric_text_placeholder": "Your Answer",
+    "select_category": "Select category",
+    "sections_overview": {
+      "content_length": "No questions | 1 question | {count} questions"
+    },
+    "new_field_popup": {
+      "name_field_label": "Question"
+    },
+    "edit_options": "Edit options"
+  },
+  "dynamic_form": {
+    "repeat_stack": "Add another"
+  },
+  "image_slider": {
+    "previous_image": "Previous image",
+    "next_image": "Next image"
+  },
+  "at_translations": {
+    "original_text": "Original text",
+    "add_translation": "Add translation",
+    "no_translation": "Type your message in another language",
+    "delete": "Delete"
+  },
+  "at_stepper_section_header": {
+    "completed": "Completed",
+    "default_unit_count": "0 steps | 1 step | {count} steps",
+    "default_unit_name": "steps"
+  }
+}

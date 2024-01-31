@@ -1,0 +1,182 @@
+{
+  "ok": "אישור",
+  "cancel": "ביטול",
+  "yes": "כן",
+  "general": {
+    "no_results": "אין תוצאות",
+    "no_results_for": "אין תוצאות עבור {key}",
+    "no_options": "אין אפשרויות זמינות",
+    "clear": "מחיקה",
+    "selections": "אין בחירות|בחירה אחת|{count} בחירות",
+    "type_new_option": "הזן אפשרות חדשה להוספה",
+    "create_new_option": "יצירת אפשרות חדשה",
+    "advanced": "מתקדם",
+    "cancel": "בטל",
+    "save": "שמירה",
+    "section": "סעיף",
+    "add": "הוסף",
+    "mandatory": "חובה",
+    "search": "חיפוש",
+    "yes": "כן",
+    "no": "לא",
+    "option": "אפשרות",
+    "powered_by": "מופעל ע\"י",
+    "next": "הבא",
+    "previous": "הקודם",
+    "submit": "שלח",
+    "name": "שם",
+    "label": "תוית",
+    "value": "ערך",
+    "ok": "אישור"
+  },
+  "errors": {
+    "unique": "הערך צריך להיות ייחודי"
+  },
+  "empty_state_message": {
+    "title": "אוי... אין פה כלום",
+    "description": "למה לא להתחיל לדווח ומלא את הטבלה?",
+    "action_text": "הוסף פריט חדש",
+    "alt_image": "אין פריטים להצגה"
+  },
+  "file_upload": {
+    "errors": {
+      "title": "נכשל ניסיון להעלות את הקובץ",
+      "quantity_files_error": "לא ניתן להעלות יותר מ {count} קבצים.",
+      "size_file_error": "גודל הקובץ עולה על {size} MB. אנא בחר קבצים קטנים יותר. | אחד או יותר מהקבצים גדולים מ {size} MB. אנא בחר קבצים קטנים יותר.",
+      "type_file_error": "קובץ מסוג {type} לא נתמך. אנא העלה {extensions}"
+    },
+    "attach_photos": "צרף תמונות",
+    "uploading": "מעלה קבצים",
+    "add_logo": "הוסף לוגו",
+    "delete": "מחק",
+    "change": "שנה"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "אין תמונות | תמונה אחת | {count} תמונות"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "תוצאות לדף:",
+      "showing_items": "אין תוצאות | מציג תוצאה אחת מתוך {totalItems} התוצאות | מציג {startIndex}-{endIndex} מתוך {totalItems} התוצאות"
+    }
+  },
+  "certifications": {
+    "rename_section": "שנה שם",
+    "delete_section": "מחק סעיף"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "מזהה האלמנט",
+      "unique": "מזהה האלמנט כבר בשימוש",
+      "valid_element_id_format": {
+        "title": "מזהה האלמנט מכיל תווים שאינם נתמכים",
+        "body": "התווים הנתמכים: 'a-z', 'A-Z', '0-9', '-' ו '_'"
+      },
+      "hint": "המזהה הייחודי משמש לזיהוי האלמנט ע״י שירותים חיצוניים.\nתווים נתמכים: 'a-z', 'A-Z', '0-9', '-' ו '_'"
+    },
+    "publish": "פרסם",
+    "save": "שמור שינויים",
+    "edit": "ערוך",
+    "apply": "בצע",
+    "question": "שאלה",
+    "add_section": "+ הוסף סעיף",
+    "add_question": "הוסף",
+    "add_question_title": "הוסף שאלה",
+    "stack_add_stack_title": "הוסף שאלה לקבוצה",
+    "add_units": "הוסף יחידות",
+    "choose_units": "בחר יחידות",
+    "clear_units": "נקה יחידות",
+    "edit_question_title": "ערוך שאלה",
+    "edit_question": "שמירה",
+    "rename_question": "עריכה",
+    "delete_question": "מחק שאלה",
+    "edit_stack": "ערוך קבוצה",
+    "delete_stack": "מחק קבוצה",
+    "delete_confirm_text": "מחיקה",
+    "delete_cancel_text": "ביטול",
+    "delete_question_title": "מחק שאלה",
+    "delete_question_content_popup": "האם אתה בטוח שברצונך למחוק?",
+    "cancel": "ביטול",
+    "make_repeatable": "הפוך לחזרתי",
+    "repeatable_description": "מאפשר לענות על הקבוצה מספר פעמים",
+    "create_section_title": "סעיף חדש",
+    "create_section_confirm_text": "הוספה",
+    "create_section_section_name": "שם הסעיף",
+    "update_section_title": "שנה את שם הסעיף",
+    "update_section_confirm_text": "שמור",
+    "delete_section_title": "מחק סעיף",
+    "delete_section_content_popup": "מחיקת סעיף ימחק את כל השאלות שבסעיף. \nהאם ברצונך למחוק את הסעיף?",
+    "delete_stack_title": "מחק קבוצה",
+    "delete_stack_content_popup": "האם אתה בטוח שברצונך למחוק?",
+    "questions_configuration": {
+      "text": {
+        "title": "טקסט",
+        "subtype_short_answer": "תשובה קצרה",
+        "subtype_paragraph": "פסקה"
+      },
+      "choice": {
+        "title": "בחירה",
+        "subtype_boolean": "כן/לא",
+        "subtype_multi_choice": "בחירה מרובה",
+        "subtype_single_choice": "בחירה יחידה"
+      },
+      "number": {
+        "title": "מספר",
+        "subtype_numeric": "מספרי",
+        "subtype_slider": "סליידר",
+        "subtype_range_slider": "סליידר (טווח)"
+      },
+      "coming_soon": "בקרוב"
+    },
+    "question_types": {
+      "question": "שאלה",
+      "stack": "קבוצה של שאלות"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "כן",
+          "no": "לא"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "אי אפשר לפרסם הסמכה עם סעיף ריק",
+        "description": "הוסף שאלה לסעיף הריק או מחק אותו."
+      },
+      "duplicate_section_name": "שם הסעיף כבר קיים"
+    },
+    "short_text_placeholder": "התשובה שלך",
+    "long_text_placeholder": "התשובה שלך",
+    "numeric_text_placeholder": "התשובה שלך",
+    "select_category": "בחר קטגוריה",
+    "sections_overview": {
+      "content_length": "אף שאלה | שאלה אחת | {count} שאלות"
+    },
+    "new_field_popup": {
+      "name_field_label": "שאלה"
+    },
+    "edit_options": "ערוך אפשרויות"
+  },
+  "dynamic_form": {
+    "repeat_stack": "הוסף עוד"
+  },
+  "image_slider": {
+    "previous_image": "התמונה הקודמת",
+    "next_image": "התמונה הבאה"
+  },
+  "at_translations": {
+    "original_text": "הטקסט המקורי",
+    "add_translation": "הוסף תרגום",
+    "no_translation": "הקלד את ההודעה בשפה אחרת",
+    "delete": "הסרה"
+  },
+  "at_stepper_section_header": {
+    "completed": "הושלם",
+    "default_unit_count": "0 שלבים | שלב אחד | {count} שלבים",
+    "default_unit_name": "שלבים"
+  }
+}

@@ -1,0 +1,40 @@
+@import '@style/scss/_base_functions';
+
+.AtSelectOption {
+  text-transform: capitalize;
+  text-align: start;
+  word-break: break-word;
+  hyphens: auto;
+  min-height: calc(var(--spacing-08) - var(--spacing-03));
+  &:not(:last-child) {
+    margin-bottom: var(--spacing-03);
+  }
+  > .checkbox {
+    margin-inline-end: 0.5em;
+  }
+
+  > .AtCheckbox {
+    align-items: flex-start;
+    color: inherit;
+    margin-bottom: 0;
+    margin-inline-end: 0;
+    .at-checkbox {
+      top: 2px;
+    }
+  }
+
+  .AtSelectOption-single,
+  .AtSelectOption-multiple {
+    text-align: inherit;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    color: var(--blue);
+  }
+
+  > button {
+    color: inherit;
+  }
+}

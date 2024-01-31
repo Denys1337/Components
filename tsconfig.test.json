@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/**/*.spec.ts", "src/js/typings/"],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "downlevelIteration": true,
+    "types": ["@types/jest"]
+  }
+}

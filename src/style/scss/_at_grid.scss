@@ -1,0 +1,211 @@
+//$mediums: 0, xs, s, m, l, xl, auto, fields, auto, fields;
+$mediums: '00', '005', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', 'auto', 'fields';
+
+// MARGIN BLOCK / INLINE
+@each $size in $mediums {
+  .margin-#{$size} {
+    margin: var(--spacing-#{$size});
+  }
+
+  .inline-#{$size} {
+    margin-inline-start: var(--spacing-#{$size});
+    margin-inline-end: var(--spacing-#{$size});
+  }
+
+  .block-#{$size} {
+    margin-block-start: var(--spacing-#{$size});
+    margin-block-end: var(--spacing-#{$size});
+  }
+
+  .inline-start-#{$size} {
+    margin-inline-start: var(--spacing-#{$size});
+  }
+  .inline-end-#{$size} {
+    margin-inline-end: var(--spacing-#{$size});
+  }
+  .block-start-#{$size} {
+    margin-block-start: var(--spacing-#{$size});
+  }
+  .block-end-#{$size} {
+    margin-block-end: var(--spacing-#{$size});
+  }
+
+  @each $sizeB in $mediums {
+    .margin-#{$size}-#{$sizeB} {
+      margin: var(--spacing-#{$size}) var(--spacing-#{$sizeB});
+    }
+  }
+
+  // padding
+  .pad-#{$size} {
+    padding: var(--spacing-#{$size});
+  }
+
+  .pad-inline-#{$size} {
+    padding-inline-start: var(--spacing-#{$size});
+    padding-inline-end: var(--spacing-#{$size});
+  }
+
+  .pad-block-#{$size} {
+    padding-block-start: var(--spacing-#{$size});
+    padding-block-end: var(--spacing-#{$size});
+  }
+
+  .pad-inline-start-#{$size} {
+    padding-inline-start: var(--spacing-#{$size});
+  }
+
+  .pad-inline-end-#{$size} {
+    padding-inline-end: var(--spacing-#{$size});
+  }
+
+  .pad-block-start-#{$size} {
+    padding-block-start: var(--spacing-#{$size});
+  }
+
+  .pad-block-end-#{$size} {
+    padding-block-end: var(--spacing-#{$size});
+  }
+
+  @each $sizeB in $mediums {
+    .pad-#{$size}-#{$sizeB} {
+      padding: var(--spacing-#{$size}) var(--spacing-#{$sizeB});
+    }
+  }
+}
+
+// AT grid
+.at-grid {
+  display: grid;
+  grid-gap: var(--spacing-05);
+  margin-block-end: var(--spacing-06);
+  grid-template-columns: repeat(12, 1fr);
+
+  @each $size in $mediums {
+    &.gap-#{$size} {
+      --gap: var(--spacing-#{$size});
+    }
+
+    &.gap-column-#{$size} {
+      column-gap: var(--spacing-#{$size});
+    }
+
+    &.gap-row-#{$size} {
+      row-gap: var(--spacing-#{$size});
+    }
+
+    &.block-end-#{$size} {
+      margin-block-end: var(--spacing-#{$size});
+    }
+  }
+}
+
+// general
+*[class*='at-col'] {
+  max-width: unset;
+}
+
+.at-col {
+  grid-column: span 12;
+}
+
+@for $i from 1 to 13 {
+  .at-col-#{$i} {
+    grid-column: span $i;
+  }
+}
+
+@for $i from 1 to 13 {
+  .at-col-sm-#{$i} {
+    @include media-breakpoint-up(sm) {
+      grid-column: span $i;
+    }
+  }
+}
+
+@for $i from 1 to 13 {
+  .at-col-md-#{$i} {
+    @include media-breakpoint-up(md) {
+      grid-column: span $i;
+    }
+  }
+}
+
+@for $i from 1 to 13 {
+  .at-col-lg-#{$i} {
+    @include media-breakpoint-up(lg) {
+      grid-column: span $i;
+    }
+  }
+}
+
+.unset-columns {
+  > *[class*='at-col'] {
+    grid-column: unset;
+  }
+}
+
+// -------- TEMPLATES --------
+.grid-template-sidebar-and-content {
+  @extend .at-grid;
+  grid-template-columns: minmax(410px, 3fr) 9fr;
+  position: relative;
+
+  > .sidebar-and-content__sidebar {
+    position: relative;
+    z-index: 1;
+  }
+
+  > .sidebar-and-content__content {
+    $vue-page-top-padding: 2.5rem;
+    $title-space: 49px;
+    $bottom-spacing: $vue-page-top-padding;
+    max-height: calc(
+      100vh - var(--header-height) - #{$vue-page-top-padding} - #{$title-space} - #{$bottom-spacing}
+    );
+    overflow-y: auto;
+    position: sticky;
+    //top: calc(var(--header-height) - #{$vue-page-top-padding} - #{$title-space});
+    top: calc(var(--header-height) + var(--spacing-02));
+  }
+}
+
+// 2 NOT equal parts - one width's is --input-max-width the other takes the rest of the width, in sm and lower 1 elemenet per grid
+.grid-template-2-parts-input {
+  @extend .at-grid;
+  @extend .unset-columns;
+  grid-template-columns: minmax(var(--input-max-width), var(--input-max-width)) 1fr;
+}
+
+// 2 equal width elements - in xs 1 elem per grid
+.grid-template-2-parts-xs {
+  @extend .at-grid;
+  @extend .unset-columns;
+  grid-template-columns: repeat(2, 1fr);
+  > *[class*='at-col'] {
+    grid-column: unset;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .grid-template-sidebar-and-content {
+    grid-template-columns: minmax(300px, 3fr) 9fr;
+  }
+}
+
+.ResponsiveTarget:not(.md) {
+  .at-grid {
+    &.grid-template-2-parts-input {
+      max-width: var(--input-max-width);
+      grid-template-columns: auto;
+    }
+  }
+}
+
+.ResponsiveTarget:not(.sm) {
+  .at-grid {
+    &.grid-template-2-parts-xs {
+      grid-template-columns: 1fr;
+    }
+  }
+}

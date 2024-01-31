@@ -1,0 +1,33 @@
+// ---- borders
+
+div[class*=' border'],
+div[class^='border'] {
+  border-style: solid;
+}
+
+.no-border {
+  border-style: none;
+}
+
+.border {
+  border-width: 1px;
+}
+
+$positions: top, right, bottom, left, block-start, block-end, inline-start, inline-end;
+@each $pos in $positions {
+  .border-#{$pos} {
+    border-#{$pos}-width: 1px;
+    border-#{$pos}-style: solid;
+  }
+}
+
+$spacings: '00', '005', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', 'fields', 'auto';
+.rounded {
+  border-radius: var(--spacing-01);
+}
+
+@each $s in $spacings {
+  .rounded-#{$s} {
+    border-radius: var(--spacing-#{$s});
+  }
+}

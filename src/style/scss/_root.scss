@@ -1,0 +1,44 @@
+@import 'globals';
+@import 'base_functions';
+@import 'mixin';
+@import 'vars';
+@import 'base_classes';
+@import 'material';
+@import 'flex';
+@import 'at_animations';
+@import 'at_panel';
+@import 'at_grid';
+@import 'typo';
+@import 'titles';
+@import 'border';
+@import 'elevations';
+@import 'transitions';
+@import 'colors_cls';
+
+@import 'fonts';
+
+@import 'agritask-font'; // agritask font (glyphs)
+
+:root {
+  --popup-z: 1100;
+  --tooltip-z: 1150;
+  --toast-z: 1150;
+  --main-menu-z: 1049;
+  --sticky-bars-z: 5;
+  --ui-pops-z: 6;
+
+  --header-height: 0px;
+  --header-icon-mode-width: 0px;
+  --sidenavbar-width: 0px;
+  --font-family-base: #{$font-family-base};
+
+  --footer-margin: 75px;
+  --footer-height: 69px;
+  --footer-top-padding: var(--spacing-05);
+  --footer-height-full: calc(var(--footer-height) + var(--footer-top-padding));
+
+  font-family: var(--font-family-base);
+  .mt {
+    font-family: var(--font-family-base);
+  }
+}

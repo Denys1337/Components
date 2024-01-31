@@ -1,0 +1,43 @@
+@import '../../../../style/scss/_mixin';
+
+.AtTable {
+  .two-line-cell {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-01);
+    color: var(--gray-1000);
+  }
+
+  .LinkCell {
+    color: var(--pri-500);
+    text-decoration-line: underline;
+  }
+
+  .TextCell {
+    word-break: break-word;
+    text-align: start;
+  }
+
+  .NumericCell {
+    display: flex;
+    margin-inline-end: auto;
+  }
+
+  .BadgeCell,
+  .ThresholdCell {
+    min-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    .AtBadge {
+      max-width: 100%;
+
+      .label {
+        max-width: unset;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

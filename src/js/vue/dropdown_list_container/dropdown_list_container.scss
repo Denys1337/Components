@@ -1,0 +1,22 @@
+.DropdownListContainer {
+  position: absolute;
+  overflow-y: auto;
+  width: 100%;
+
+  padding-inline-end: 15px;
+  padding-block-end: 15px;
+  padding-inline-start: 21px;
+  border-radius: 4px;
+  box-shadow: var(--menu-dropshadow);
+  background: var(--background-color);
+  z-index: var(--tooltip-z);
+  & > :first-child {
+    padding-block-start: 21px;
+  }
+  &.below {
+    top: 100%;
+  }
+  &.above {
+    bottom: 100%;
+  }
+}

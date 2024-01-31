@@ -1,0 +1,33 @@
+:root {
+  --background-color: var(--white);
+}
+
+.at {
+  $padding: 24px;
+  $padding-minus: -1 * $padding;
+
+  &-panel {
+    background: var(--background-color);
+
+    &.pad {
+      padding: $padding;
+      .sticky-bottom-footer {
+        margin: 0 $padding-minus;
+        padding-right: $padding;
+        padding-left: $padding;
+      }
+    }
+
+    .sticky-bottom-footer {
+      bottom: 0;
+      padding: 0.75rem 0 $padding;
+      margin-bottom: 0;
+    }
+  }
+
+  &-hr {
+    background: var(--hr-color);
+    margin-block-start: var(--spacing-06);
+    margin-block-end: var(--spacing-06);
+  }
+}

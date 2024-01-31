@@ -1,0 +1,182 @@
+{
+  "ok": "OK",
+  "cancel": "Peruuta",
+  "yes": "Kyllä",
+  "general": {
+    "no_results": "Ei tuloksia",
+    "no_results_for": "Ei tuloksia kohteelle {key}'",
+    "no_options": "Ei vaihtoehtoja saatavilla",
+    "clear": "Tyhjennä",
+    "selections": "Ei valintoja | 1 valinta | {count} valintoja",
+    "type_new_option": "Kirjoita uusi valinta lisättäväksi",
+    "create_new_option": "Luo uusi vaihtoehto",
+    "advanced": "Lisäasetukset",
+    "cancel": "Peruuta",
+    "save": "Tallenna",
+    "section": "Osio",
+    "add": "Lisää",
+    "mandatory": "Pakollinen",
+    "search": "Hae",
+    "yes": "Kyllä",
+    "no": "ei",
+    "option": "Vaihtoehto",
+    "powered_by": "Palvelun tarjoaa",
+    "next": "Seuraava",
+    "previous": "Edellinen",
+    "submit": "Lähetä",
+    "name": "Nimi",
+    "label": "Etiketti",
+    "value": "Arvo",
+    "ok": "OK"
+  },
+  "errors": {
+    "unique": "Arvon on oltava yksilöllinen"
+  },
+  "empty_state_message": {
+    "title": "Hmm... tämä on tyhjä",
+    "description": "Älä turhaan ujostele, aloita raportointi ja täytä taulukko",
+    "action_text": "Lisää uusi merkintä",
+    "alt_image": "Tietueita ei ole"
+  },
+  "file_upload": {
+    "errors": {
+      "title": "Tiedostojen lataaminen epäonnistui",
+      "quantity_files_error": "Enemmän kuin {count} tiedostoa ei voi ladata.",
+      "size_file_error": "Tiedoston koko on yli {size} Mt, valitse pienemmät tiedostot.| Yksi tai useampi tiedosto on yli {size} Mt, valitse pienemmät tiedostot.",
+      "type_file_error": "Tiedostotyyppiä {type} ei tueta, lähetä {extensions}"
+    },
+    "attach_photos": "Liitä valokuvia",
+    "uploading": "Ladataan tiedostoja",
+    "add_logo": "Lisää logo",
+    "delete": "Poista",
+    "change": "Muuta"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "Ei kuvia | 1 kuva | {count} kuvaa"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "Sivukohtaiset tulokset:",
+      "showing_items": "Ei näytettäviä esineitä - Näytetään 1 kohde {totalItems} kohteista · Näytetään {startIndex}-{endIndex} / {totalItems} kohteesta"
+    }
+  },
+  "certifications": {
+    "rename_section": "Nimeä uudelleen",
+    "delete_section": "Poista osio"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "Elementin tunnus",
+      "unique": "Elementin tunnus on jo käytössä",
+      "valid_element_id_format": {
+        "title": "Elementin tunnus sisältää merkkejä, joita ei tueta",
+        "body": "Tuetut merkit: 'a–z', 'A–Z', '0–9', '-' ja '_'"
+      },
+      "hint": "Yksilöllistä tunnusta käytetään ulkoisten palvelujen elementin tunnistamiseen.\nTuetut merkit: 'a–z', 'A–Z', '0–9', '-' ja '_'"
+    },
+    "publish": "Julkaise",
+    "save": "Tallenna muutokset",
+    "edit": "Muokkaa",
+    "apply": "Käytä",
+    "question": "Kysymys",
+    "add_section": "+ Lisää osio",
+    "add_question": "Lisää",
+    "add_question_title": "Lisää kysymys",
+    "stack_add_stack_title": "Lisää kysymys pinoon",
+    "add_units": "Lisää yksiköitä",
+    "choose_units": "Valitse yksiköt",
+    "clear_units": "Tyhjennä yksiköt",
+    "edit_question_title": "Muokkaa kysymystä",
+    "edit_question": "Tallenna",
+    "rename_question": "Muokkaa",
+    "delete_question": "Poista kysymys",
+    "edit_stack": "Muokkaa pinoa",
+    "delete_stack": "Poista pino",
+    "delete_confirm_text": "Poista",
+    "delete_cancel_text": "Peruuta",
+    "delete_question_title": "Poista kysymys",
+    "delete_question_content_popup": "Haluatko varmasti poistaa?",
+    "cancel": "Peruuta",
+    "make_repeatable": "Tee toistettaviksi",
+    "repeatable_description": "Tarjoaa mahdollisuuden vastata pinoon useita kertoja",
+    "create_section_title": "Uusi osio",
+    "create_section_confirm_text": "Lisää",
+    "create_section_section_name": "Osion nimi",
+    "update_section_title": "Nimeä osio uudelleen",
+    "update_section_confirm_text": "Tallenna",
+    "delete_section_title": "Poista osio",
+    "delete_section_content_popup": "Osion poistaminen poistaa kaikki osion kysymykset.\n Haluatko varmasti poistaa?",
+    "delete_stack_title": "Poista pino",
+    "delete_stack_content_popup": "Haluatko varmasti poistaa?",
+    "questions_configuration": {
+      "text": {
+        "title": "Teksti",
+        "subtype_short_answer": "Lyhyt vastaus",
+        "subtype_paragraph": "Kappale"
+      },
+      "choice": {
+        "title": "Valinta",
+        "subtype_boolean": "Kyllä/ei",
+        "subtype_multi_choice": "Monivalinta",
+        "subtype_single_choice": "Yksittäinen valinta"
+      },
+      "number": {
+        "title": "Numero",
+        "subtype_numeric": "Numeerinen",
+        "subtype_slider": "Liukusäädin",
+        "subtype_range_slider": "Alueen liukusäädin"
+      },
+      "coming_soon": "Tulossa pian"
+    },
+    "question_types": {
+      "question": "Kysymys",
+      "stack": "Kysymyspino"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "Kyllä",
+          "no": "Ei"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "Et voi julkaista tyhjällä osiolla",
+        "description": "Lisää kysymyksiä tyhjään osioon tai poista se ja yritä uudelleen."
+      },
+      "duplicate_section_name": "Osion nimi on jo olemassa"
+    },
+    "short_text_placeholder": "Vastauksesi",
+    "long_text_placeholder": "Vastauksesi",
+    "numeric_text_placeholder": "Vastauksesi",
+    "select_category": "Valitse luokka",
+    "sections_overview": {
+      "content_length": "Ei kysymyksiä | 1 kysymys | {count} kysymystä"
+    },
+    "new_field_popup": {
+      "name_field_label": "Kysymys"
+    },
+    "edit_options": "Muokkaa vaihtoehtoja"
+  },
+  "dynamic_form": {
+    "repeat_stack": "Lisää toinen"
+  },
+  "image_slider": {
+    "previous_image": "Edellinen kuva",
+    "next_image": "Seuraava kuva"
+  },
+  "at_translations": {
+    "original_text": "Alkuperäinen teksti",
+    "add_translation": "Lisää käännös",
+    "no_translation": "Kirjoita viestisi toisella kielellä",
+    "delete": "Poista"
+  },
+  "at_stepper_section_header": {
+    "completed": "Valmis",
+    "default_unit_count": "0 vaihetta | 1 vaihe | {count} vaihetta",
+    "default_unit_name": "vaiheet"
+  }
+}

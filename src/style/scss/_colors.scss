@@ -1,0 +1,392 @@
+//----Brand colors
+$brand-100: #66ddc9;
+$brand-200: #42b7ac;
+$brand-300: #1a827d;
+$brand-400: #245453;
+$agritask-color: #{$brand-300};
+
+//----grays
+$white: #ffffff;
+$gray-100: #ffffff;
+$gray-150: #fcfcfd;
+$gray-200: #f9f9fa;
+$gray-300: #ebeef0;
+$gray-400: #dde1e4;
+$gray-500: #bcc5cb;
+$gray-600: #a8b5bc;
+$gray-700: #93a2ab;
+$gray-800: #798c97;
+$gray-900: #5f6e77;
+$gray-1000: #384146;
+$black: #000000;
+
+//----primary-blues
+$pri-100: #e6f4fe;
+$pri-500: #008ef4;
+$pri-600: #0080dc;
+$pri-800: #0063ab;
+
+$pri-500-015: #009bbd26;
+
+//----reds
+$red-100: #fff9f6;
+$red-500: #da4644;
+$red-600: #bb313b;
+$red-800: #9c2235;
+
+$danger-100: $red-100;
+$danger-500: $red-500;
+$danger-600: $red-600;
+$danger-800: $red-800;
+
+//----greens
+$green-100: #f7fcf6;
+$green-500: #2bc016;
+
+//----oranges
+$orange-100: #fffbf6;
+$orange-500: #faa321;
+
+//----background
+$bg-500: #f5f7f9;
+
+//----data colors
+$data-red: #dc1e1e;
+$data-red-bg: $red-100;
+$data-brown: #9f530f;
+$data-brown-bg: #f9ede2;
+$data-orange: #ffad31;
+$data-orange-bg: $orange-100;
+$data-green: $green-500;
+$data-green-bg: $green-100;
+$data-light-blue: #4fcaff;
+$data-light-blue-bg: $pri-100;
+$data-blue: $pri-500;
+$data-blue-bg: $pri-100;
+$data-purpel: #5d34ff;
+$data-purpel-bg: #eeeaff;
+$data-white: $white;
+$data-white-bg: $gray-600;
+
+:export {
+  white: $white;
+  gray-100: $gray-100;
+  gray-150: $gray-150;
+  gray-200: $gray-200;
+  gray-300: $gray-300;
+  gray-400: $gray-400;
+  gray-500: $gray-500;
+  gray-600: $gray-600;
+  gray-700: $gray-700;
+  gray-800: $gray-800;
+  gray-900: $gray-900;
+  gray-1000: $gray-1000;
+  black: $black;
+  pri-100: $pri-100;
+  pri-500: $pri-500;
+  pri-600: $pri-600;
+  pri-800: $pri-800;
+  pri-500-015: $pri-500-015;
+  red-100: $red-100;
+  red-500: $red-500;
+  danger-100: $danger-100;
+  danger-500: $danger-500;
+  danger-600: $danger-600;
+  danger-800: $danger-800;
+  green-100: $green-100;
+  green-500: $green-500;
+  orange-100: $orange-100;
+  orange-500: $orange-500;
+  bg-500: $bg-500;
+
+  data-red: $data-red;
+  data-red-bg: $data-red-bg;
+  data-brown: $data-brown;
+  data-brown-bg: $data-brown-bg;
+  data-orange: $data-orange;
+  data-orange-bg: $data-orange-bg;
+  data-green: $data-green;
+  data-green-bg: $data-green-bg;
+  data-light-blue: $data-light-blue;
+  data-light-blue-bg: $data-light-blue-bg;
+  data-blue: $data-blue;
+  data-blue-bg: $data-blue-bg;
+  data-purpel: $data-purpel;
+  data-purpel-bg: $data-purpel-bg;
+  data-white: $data-white;
+  data-white-bg: $data-white-bg;
+}
+
+//----CSS VARIABLES {"collapsed":"disabled", "highlight": true}
+//----CSS VARIABLES END
+:root {
+  //----Brand colors (CSS vars)
+  --agritask-color: #{$agritask-color};
+  --brand-400: #{$brand-400};
+  --brand-300: #{$brand-300};
+  --brand-200: #{$brand-200};
+  --brand-100: #{$brand-100};
+
+  //----grays (CSS vars)
+  --white: #{$white};
+  --gray-100: #{$gray-100};
+  --gray-150: #{$gray-150};
+  --gray-200: #{$gray-200};
+  --gray-300: #{$gray-300};
+  --gray-400: #{$gray-400};
+  --gray-500: #{$gray-500};
+  --gray-600: #{$gray-600};
+  --gray-700: #{$gray-700};
+  --gray-800: #{$gray-800};
+  --gray-900: #{$gray-900};
+  --gray-1000: #{$gray-1000};
+  --black: #{$black};
+
+  //----primary-blues (CSS vars)
+  --pri-100: #{$pri-100};
+  --pri-500: #{$pri-500};
+  --pri-600: #{$pri-600};
+  --pri-800: #{$pri-800};
+
+  //----primary-blues with transparency (CSS vars)
+  --pri-500-015: #{$pri-500-015};
+
+  //----reds (CSS vars)
+  --red-100: #{$red-100};
+  --red-500: #{$red-500};
+  --red-600: #{$red-600};
+  --red-800: #{$red-800};
+
+  --danger-100: var(--red-100);
+  --danger-500: var(--red-500);
+  --danger-600: var(--red-600);
+  --danger-800: var(--red-800);
+
+  //----greens (CSS vars)
+  --green-100: #{$green-100};
+  --green-500: #{$green-500};
+
+  //----oranges (CSS vars)
+  --orange-100: #{$orange-100};
+  --orange-500: #{$orange-500};
+
+  //----background (CSS vars)
+  --bg-500: #{$bg-500};
+
+  //----input (CSS vars)
+  --input-invalid: var(--danger-500);
+  --input-valid: var(--green-500);
+
+  --input-color-default: #{$gray-900};
+  --input-color-hover: #{$gray-900};
+  --input-color-focus: #{$gray-900};
+  --input-color-disabled: #{$gray-600};
+  --input-color-invalid: #{$gray-900};
+
+  --input-label-default: #{$gray-1000};
+
+  --input-border-default: #{$gray-600};
+  --input-border-hover: #{$gray-900};
+  --input-border-focus: #{$pri-500};
+  --input-border-disabled: #{$gray-600};
+  --input-border-invalid: var(--input-invalid);
+
+  //----data (CSS vars)
+  --data-red: #{$data-red};
+  --data-red-bg: #{$data-red-bg};
+  --data-brown: #{$data-brown};
+  --data-brown-bg: #{$data-brown-bg};
+  --data-orange: #{$data-orange};
+  --data-orange-bg: #{$data-orange-bg};
+  --data-green: #{$data-green};
+  --data-green-bg: #{$data-green-bg};
+  --data-light-blue: #{$data-light-blue};
+  --data-light-blue-bg: #{$data-light-blue-bg};
+  --data-blue: #{$data-blue};
+  --data-blue-bg: #{$data-blue-bg};
+  --data-purpel: #{$data-purpel};
+  --data-purpel-bg: #{$data-purpel-bg};
+  --data-white: #{$data-white};
+  --data-white-bg: #{$data-white-bg};
+}
+
+//----OLD colors and vars {"collapsed": true, "deprecated": true}
+$grey75: #757575;
+$grey79: #797979;
+$grey82: #828282;
+$greyBA: #bababa;
+$greyF2: #f2f2f2;
+$greyE5: #e5e5ea;
+$greyF5: #f5f5f5;
+$greyD1: #d1d1d1;
+$grey3a: #3a3a3a;
+$greyEC: #ececec;
+$grey3d: #3d3d3d;
+$grey97: #979797;
+$greya0: #a0a0a0;
+$greyd2: #d2d2d2;
+$grey0f: #0f0f0f;
+$dark-dark-grey: $gray-1000;
+$light-light-grey: $gray-200;
+$red-color: $red-500;
+$yellow-color: $orange-500;
+$green-color: $green-500;
+$blue-color: $pri-600;
+$lightish-blue: $pri-500;
+$lightest-blue: $pri-100;
+$hover-lightish-blue: $pri-600;
+$focused-lightish-blue: $pri-800;
+$grayish-black: $gray-900;
+$severity-red: $red-500;
+$severity-red-bg: $red-100;
+$severity-green: $green-500;
+$severity-green-bg: $green-100;
+$very-light-grey: $gray-400;
+$most-light-pink: $gray-200;
+$med-grey: $gray-300;
+$light-blue: $pri-100;
+$primary-color: $gray-1000;
+$menu-links-color: $grayish-black;
+$menu-links-icon: $grayish-black;
+
+$select2-main-color: $pri-500;
+$select2-second-color: $gray-600;
+$select2-empty-selection-color: $gray-200;
+
+$main-element-color: $gray-700;
+$second-element-color: $pri-600;
+$selected-blue-color: $pri-500;
+
+$bg-grey: $bg-500;
+$border-grey: $gray-400;
+$grey: $gray-900;
+$dark-grey: $grayish-black;
+$blue: $pri-500;
+$brighter-blue: $pri-500;
+$inactive-grey: $gray-600;
+$red: $red-500;
+$border-red: $severity-red;
+$error-red: $red-100;
+$status-blue: $pri-500;
+$inactive-grey-text: $gray-500;
+$button-hover-blue: $pri-600;
+$button-regular-color: $grayish-black;
+$menu-items-grey: $gray-800;
+$modal-title-grey: $gray-600;
+$menu-dropdown-bg: $gray-200;
+$menu-dropdown-hover: $light-light-grey;
+
+$totals-grey: $gray-300;
+$quotation-disabled-grey: $gray-400;
+
+$kendo-border-color: $gray-400;
+$kendo-selection-text-color: $black;
+$kendo-selection-row-background-color: $pri-100;
+$kendo-selection-hover-border-color: $gray-300;
+$kendo-selection-hover-color: $gray-300;
+$kendo-alt-color: $gray-1000;
+
+//----Pivot Calendar {"collapsed": true, "deprecated": true}
+$weekend-color: $gray-200;
+$future-color: $pri-500-015;
+$future-weekend-color: $pri-100;
+$activity-card-remove-button: $severity-red;
+$activity-cell-selected-color: $gray-300;
+
+$alert-green: $green-500;
+$alert-green-light: $green-100;
+//$alert-yellow: #ffdd83;
+$alert-red: $severity-red;
+
+$attention-blue: $blue;
+$attention-red: $alert-red;
+$attention-green: $orange-500;
+//----Pivot Calendar END
+
+//----All Field Data {"collapsed": true, "deprecated": true}
+$future-row-color: $pri-100;
+//----All Field Data END
+
+//----Scout Path {"collapsed": true, "deprecated": true}
+$scout-path-selection-color: $pri-100;
+//----Scout Path END
+
+//----OLD CSS VARIABLES {"collapsed":"disabled", "deprecated": true}
+//----OLD CSS VARIABLES END
+:root {
+  //----OLDs  {"collapsed": true, "deprecated": true}
+  --red-color: #{$red-color};
+  --yellow-color: #{$yellow-color};
+  --green-color: #{$green-color};
+  --blue-color: #{$blue-color};
+  --lightish-blue: #{$lightish-blue};
+  --lightest-blue: #{$lightest-blue};
+  --hover-lightish-blue: #{$hover-lightish-blue};
+  --grayish-black: #{$grayish-black};
+  --severity-red: #{$severity-red};
+  --severity-green: #{$severity-green};
+  --severity-red-bg: #{$severity-red-bg};
+  --severity-green-bg: #{$severity-green-bg};
+  --very-light: #{$very-light-grey};
+  --most-light: #{$most-light-pink};
+  --med-grey: #{$med-grey};
+
+  --light-blue: #{$light-blue};
+
+  --primary-color: #{$primary-color};
+  --menu-links-color: #{$menu-links-color};
+  --menu-links-icon: #{$menu-links-icon};
+
+  --alert-green: #{$alert-green};
+  --alert-green-light: #{$alert-green-light};
+
+  --select2-main-color: #{$select2-main-color};
+  --select2-second-color: #{$select2-second-color};
+  --select2-empty-color: #{$select2-empty-selection-color};
+
+  --main-element-color: #{$main-element-color};
+  --second-element-color: #{$second-element-color};
+  --selected-blue-color: #{$selected-blue-color};
+
+  --bg-grey: #{$bg-grey};
+  --border-grey: #{$border-grey};
+  --grey: #{$grey};
+  --dark-grey: #{$dark-grey};
+  --blue: #{$blue};
+  --inactive-grey: #{$inactive-grey};
+  --red: #{$red};
+  --border-red: #{$border-red};
+  --error-red: #{$error-red};
+  --status-blue: #{$status-blue};
+  --inactive-grey-text: #{$inactive-grey-text};
+  --button-hover-blue: #{$button-hover-blue};
+  --button-regular-color: #{$button-regular-color};
+  --menu-items-grey: #{$menu-items-grey};
+  --modal-title-grey: #{$modal-title-grey};
+  --menu-dropdown-bg: #{$menu-dropdown-bg};
+  --menu-dropdown-hover: #{$menu-dropdown-hover};
+  --dark-dark-grey: #{$dark-dark-grey};
+  --light-light-grey: #{$light-light-grey};
+  --grey0f: #{$grey0f};
+  --grey75: #{$grey75};
+  --grey79: #{$grey79};
+  --grey82: #{$grey82};
+  --grey97: #{$grey97};
+  --greyBA: #{$greyBA};
+  --greyF2: #{$greyF2};
+  --greyE5: #{$greyE5};
+  --greyF5: #{$greyF5};
+  --grey3a: #{$grey3a};
+  --greyEC: #{$greyEC};
+  --greya0: #{$greya0};
+  --greyd2: #{$greyd2};
+  --totals-grey: #{$totals-grey};
+  --quotation-disabled-grey: #{$quotation-disabled-grey};
+  --disabled-grey: #{$quotation-disabled-grey};
+  --focused-lightish-blue: #{$focused-lightish-blue};
+  --brighter-blue: #{$brighter-blue};
+  --hr-color: #{$very-light-grey};
+  --future-row-color: #{$future-row-color};
+
+  --background: var(--bg-grey);
+}

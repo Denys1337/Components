@@ -1,0 +1,182 @@
+{
+  "ok": "OK",
+  "cancel": "Hủy",
+  "yes": "Có",
+  "general": {
+    "no_results": "Không có kết quả",
+    "no_results_for": "Không có kết quả cho '{key}'",
+    "no_options": "Không có tùy chọn nào",
+    "clear": "Xóa",
+    "selections": "Không có lựa chọn nào | 1 lựa chọn | {count} lựa chọn",
+    "type_new_option": "Nhập tùy chọn mới để thêm",
+    "create_new_option": "Tạo tùy chọn mới",
+    "advanced": "Nâng cao",
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "section": "Phần",
+    "add": "Thêm",
+    "mandatory": "Bắt buộc",
+    "search": "Tìm kiếm",
+    "yes": "Có",
+    "no": "không",
+    "option": "Tùy chọn",
+    "powered_by": "Được cung cấp bởi",
+    "next": "Tiếp theo",
+    "previous": "Trước",
+    "submit": "Gửi",
+    "name": "Tên",
+    "label": "Nhãn",
+    "value": "Giá trị",
+    "ok": "OK"
+  },
+  "errors": {
+    "unique": "Giá trị phải là duy nhất"
+  },
+  "empty_state_message": {
+    "title": "Hmm... phần này đang trống",
+    "description": "Đừng ngần ngại, hãy bắt đầu báo cáo và điền vào bảng",
+    "action_text": "Thêm hồ sơ mới",
+    "alt_image": "Không có hồ sơ"
+  },
+  "file_upload": {
+    "errors": {
+      "title": "Không tải lên được tệp",
+      "quantity_files_error": "Không thể tải lên nhiều hơn {count} tệp.",
+      "size_file_error": "Tệp vượt quá {size} MB, vui lòng chọn tệp nhỏ hơn.| Một hoặc nhiều tệp vượt quá {size} MB, vui lòng chọn các tệp nhỏ hơn.",
+      "type_file_error": "Loại tệp {type} không được hỗ trợ, vui lòng tải lên {extensions}"
+    },
+    "attach_photos": "Đính kèm ảnh",
+    "uploading": "Đang tải lên tệp",
+    "add_logo": "Thêm logo",
+    "delete": "Xóa",
+    "change": "Thay đổi"
+  },
+  "tables": {
+    "cells": {
+      "images": {
+        "count": "Không có ảnh | 1 ảnh | {count} ảnh"
+      }
+    },
+    "pagination": {
+      "items_per_page_select_label": "Kết quả trên mỗi trang:",
+      "showing_items": "Không có mục nào để hiển thị | Hiển thị 1 mục trong {totalItems} mục | Hiển thị {startIndex}-{endIndex} trong {totalItems} mục"
+    }
+  },
+  "certifications": {
+    "rename_section": "Đổi tên",
+    "delete_section": "Xóa mục"
+  },
+  "form_builder": {
+    "element_id": {
+      "label": "ID thành phần",
+      "unique": "ID thành phần đã được sử dụng",
+      "valid_element_id_format": {
+        "title": "ID thành phần chứa các ký tự không được hỗ trợ",
+        "body": "Các ký tự được hỗ trợ: 'a-z', 'A-Z', '0-9', '-' và '_'"
+      },
+      "hint": "ID duy nhất được sử dụng để xác định thành phần cho các dịch vụ bên ngoài.\nCác ký tự được hỗ trợ: 'a-z', 'A-Z', '0-9', '-' và '_'"
+    },
+    "publish": "Đăng",
+    "save": "Lưu thay đổi",
+    "edit": "Chỉnh sửa",
+    "apply": "Áp dụng",
+    "question": "Câu hỏi",
+    "add_section": "+ Thêm mục",
+    "add_question": "Thêm",
+    "add_question_title": "Thêm câu hỏi",
+    "stack_add_stack_title": "Thêm câu hỏi vào ngăn xếp",
+    "add_units": "Thêm đơn vị",
+    "choose_units": "Chọn đơn vị",
+    "clear_units": "Xóa đơn vị",
+    "edit_question_title": "Chỉnh sửa câu hỏi",
+    "edit_question": "Lưu",
+    "rename_question": "Chỉnh sửa",
+    "delete_question": "Xóa câu hỏi",
+    "edit_stack": "Chỉnh sửa ngăn xếp",
+    "delete_stack": "Xóa ngăn xếp",
+    "delete_confirm_text": "Xóa",
+    "delete_cancel_text": "Hủy",
+    "delete_question_title": "Xóa câu hỏi",
+    "delete_question_content_popup": "Bạn có chắc chắn muốn xóa không?",
+    "cancel": "Hủy",
+    "make_repeatable": "Lặp lại",
+    "repeatable_description": "Cung cấp khả năng trả lời ngăn xếp nhiều lần",
+    "create_section_title": "Mục mới",
+    "create_section_confirm_text": "Thêm",
+    "create_section_section_name": "Tên mục",
+    "update_section_title": "Đổi tên mục",
+    "update_section_confirm_text": "Lưu",
+    "delete_section_title": "Xóa mục",
+    "delete_section_content_popup": "Xóa một mục sẽ xóa toàn bộ câu hỏi trong mục đó.\n Bạn có chắc chắn muốn xóa không?",
+    "delete_stack_title": "Xóa ngăn xếp",
+    "delete_stack_content_popup": "Bạn có chắc chắn muốn xóa không?",
+    "questions_configuration": {
+      "text": {
+        "title": "Văn bản",
+        "subtype_short_answer": "Câu trả lời ngắn",
+        "subtype_paragraph": "Đoạn"
+      },
+      "choice": {
+        "title": "Lựa chọn",
+        "subtype_boolean": "Có/không",
+        "subtype_multi_choice": "Trắc nghiệm",
+        "subtype_single_choice": "Một lựa chọn"
+      },
+      "number": {
+        "title": "Số",
+        "subtype_numeric": "Dạng số",
+        "subtype_slider": "Thanh trượt",
+        "subtype_range_slider": "Thanh trượt phạm vi"
+      },
+      "coming_soon": "Sắp ra mắt"
+    },
+    "question_types": {
+      "question": "Câu hỏi",
+      "stack": "Ngăn xếp câu hỏi"
+    },
+    "questions_answers": {
+      "choice": {
+        "single_choice": {
+          "yes": "Có",
+          "no": "Không"
+        }
+      }
+    },
+    "errors": {
+      "section_without_question": {
+        "title": "Bạn không thể đăng một mục trống",
+        "description": "Thêm câu hỏi vào mục trống này hoặc xóa mục này và thử lại."
+      },
+      "duplicate_section_name": "Tên mục đã tồn tại"
+    },
+    "short_text_placeholder": "Câu trả lời của bạn",
+    "long_text_placeholder": "Câu trả lời của bạn",
+    "numeric_text_placeholder": "Câu trả lời của bạn",
+    "select_category": "Chọn danh mục",
+    "sections_overview": {
+      "content_length": "Không có câu hỏi | 1 câu hỏi | {count} câu hỏi"
+    },
+    "new_field_popup": {
+      "name_field_label": "Câu hỏi"
+    },
+    "edit_options": "Chỉnh sửa tùy chọn"
+  },
+  "dynamic_form": {
+    "repeat_stack": "Thêm một tùy chọn khác"
+  },
+  "image_slider": {
+    "previous_image": "Ảnh trước đó",
+    "next_image": "Ảnh tiếp theo"
+  },
+  "at_translations": {
+    "original_text": "Văn bản gốc",
+    "add_translation": "Thêm bản dịch",
+    "no_translation": "Nhập thông báo của bạn bằng ngôn ngữ khác",
+    "delete": "Xóa"
+  },
+  "at_stepper_section_header": {
+    "completed": "Đã hoàn tất",
+    "default_unit_count": "0 bước | 1 bước | {count} bước",
+    "default_unit_name": "bước"
+  }
+}

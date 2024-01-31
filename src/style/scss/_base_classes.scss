@@ -1,0 +1,144 @@
+// Fonts and Text
+$textTransforms: capitalize, uppercase, lowercase;
+@each $var in $textTransforms {
+  .#{$var} {
+    text-transform: #{$var};
+  }
+}
+.capitalize-first {
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.font-light {
+  font-weight: var(--font-light);
+}
+.font-normal {
+  font-weight: var(--font-normal);
+}
+.font-bold {
+  font-weight: var(--font-bold);
+}
+.font-bolder {
+  font-weight: var(--font-bolder);
+}
+
+.text-align-center {
+  text-align: center;
+}
+.text-align-start {
+  text-align: start;
+}
+.text-align-end {
+  text-align: end;
+}
+
+$displays: block, inline, contents, flex, grid, inline-block, inline-flex, inline-grid, table,
+  table-cell, table-column, table-row, none, initial, inherit;
+
+$positions: static, absolute, fixed, relative, sticky, initial, inherit;
+
+$sides: top, left, right, bottom;
+
+$percentages: 25, 50, 75, 100;
+
+@each $item in $displays {
+  .d-#{$item} {
+    display: $item;
+  }
+}
+
+@each $item in $positions {
+  .p-#{$item} {
+    position: $item;
+  }
+}
+
+@each $side in $sides {
+  .#{$side}-0 {
+    #{$side}: 0;
+  }
+  @each $perc in $percentages {
+    .#{$side}-#{$perc} {
+      #{$side}: #{$perc + '%'};
+    }
+  }
+}
+
+$percentages_zero: 0, 25, 50, 75, 100;
+@each $perc in $percentages_zero {
+  .inset-#{$perc} {
+    inset: #{$perc + '%'};
+  }
+}
+
+@each $perc in $percentages_zero {
+  @each $perc2 in $percentages_zero {
+    .inset-#{$perc}-#{$perc2} {
+      inset: #{$perc + '%'} #{$perc2 + '%'};
+    }
+  }
+}
+
+// flex
+$flex-flows: column, row, column-reverse, row-reverse, wrap, nowrap, wrap-reverse, unset, initial,
+  inherit;
+$units: 0, 1, 2, 3, 4, 5, 6;
+$united: flex-grow, flex-shrink;
+$justify-contents: start, end, left, right, flex-end, flex-start, space-around, space-between,
+  space-evenly, stretch, center;
+$align-contents: center, start, end, flex, flex, normal, baseline, space, space, space, stretch,
+  inherit, initial, revert, unset, flex-start, flex-end;
+$align-items: center, start, end, normal, baseline, stretch, inherit, initial, revert, unset,
+  flex-start, flex-end, self-start, self-end;
+
+@each $f in $flex-flows {
+  .flex-#{$f} {
+    flex-flow: #{$f};
+  }
+}
+
+@each $subject in $united {
+  @each $u in $units {
+    .#{$subject}-#{$u} {
+      #{$subject}: $u;
+    }
+  }
+}
+
+@each $jc in $justify-contents {
+  .jc-#{$jc} {
+    justify-content: #{$jc};
+  }
+  .js-#{$jc} {
+    justify-self: #{$jc};
+  }
+}
+
+@each $ac in $align-contents {
+  .ac-#{$ac} {
+    align-content: #{$ac};
+  }
+  .as-#{$ac} {
+    align-self: #{$ac};
+  }
+}
+
+@each $ai in $align-items {
+  .ai-#{$ai} {
+    align-items: #{$ai};
+  }
+}
+
+// box-sizing
+.border-box {
+  box-sizing: border-box;
+}
+.content-box {
+  box-sizing: content-box;
+}
+
+.pointer {
+  cursor: pointer;
+}

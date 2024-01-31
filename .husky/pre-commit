@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+COLOR_END='\033[0m'
+STAGED_FILES_FOR_ESLINT=$(git diff --cached --name-only --diff-filter=ACRM --line-prefix=`git rev-parse --show-toplevel`/ | grep '\.js$\|\.ts$\|\.vue$')
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACRM --line-prefix=`git rev-parse --show-toplevel`/ )
+
+if [[ "$STAGED_FILES" = "" ]]; then
+  exit 0
+fi
+
+
+echo -e "$GREEN[ Typescript check start ]$COLOR_END"
+TSC_RESULT=$(./node_modules/.bin/tsc --project ./tsconfig.json)
+
+if [[ -n $TSC_RESULT ]]; then
+  echo -e "$RED[ Typescript check failed ]$COLOR_END"
+  echo "Please fix the Typescript errors and try again:"
+  echo $TSC_RESULT
+  exit 1
+fi
+
+echo -e "$GREEN[ ESLint check start ]$COLOR_END"
+ESLINT_RESULT=$(./node_modules/.bin/eslint --fix $STAGED_FILES_FOR_ESLINT)
+
+if [[ -n $ESLINT_RESULT ]]; then
+  echo -e "$RED[ ESLint failed ]$COLOR_END"
+  echo "Please fix the ESLint errors and try again:"
+  echo $ESLINT_RESULT
+  exit 1
+fi
+
+if [[ "$STAGED_FILES_FOR_ESLINT" != "" ]]; then
+  git add $STAGED_FILES_FOR_ESLINT
+fi
+
+echo -e "$GREEN[ ESLint passed successfully ]$COLOR_END"
+
+echo -e "$GREEN[ Prettier check start ]$COLOR_END"
+./node_modules/.bin/prettier --write $STAGED_FILES --ignore-unknown
+
+PRETTIER_EXIT="$?"
+
+if [[ "$STAGED_FILES" != "" ]]; then
+  git add $STAGED_FILES
+fi
+
+if [[ "$PRETTIER_EXIT" == 0 ]]; then
+  echo -e "$GREEN[ Prettier passed successfully ]$COLOR_END"
+else
+  echo -e "$RED[ Commit failed because of Prettier ]$COLOR_END"
+  echo "Please fix the Prettier errors and try again."
+  exit 1
+fi

@@ -1,0 +1,33 @@
+//----spacing SCSS vars
+$spacing-00: 0rem;
+$spacing-005: 0.125rem;
+$spacing-01: 0.25rem;
+$spacing-02: 0.5rem;
+$spacing-03: 0.75rem;
+$spacing-04: 1rem;
+$spacing-05: 1.25rem;
+$spacing-06: 1.5rem;
+$spacing-07: 2rem;
+$spacing-08: 2.5rem;
+$spacing-09: 3rem;
+$spacing-10: 3.5rem;
+$spacing-fields: $spacing-05;
+$spacing-auto: auto;
+
+:root {
+  //----spacing CSS vars
+  --spacing-00: #{$spacing-00};
+  --spacing-005: #{$spacing-005};
+  --spacing-01: #{$spacing-01};
+  --spacing-02: #{$spacing-02};
+  --spacing-03: #{$spacing-03};
+  --spacing-04: #{$spacing-04};
+  --spacing-05: #{$spacing-05};
+  --spacing-06: #{$spacing-06};
+  --spacing-07: #{$spacing-07};
+  --spacing-08: #{$spacing-08};
+  --spacing-09: #{$spacing-09};
+  --spacing-10: #{$spacing-10};
+  --spacing-fields: #{$spacing-fields};
+  --spacing-auto: #{$spacing-auto};
+}

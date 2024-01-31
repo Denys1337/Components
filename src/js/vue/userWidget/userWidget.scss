@@ -1,0 +1,34 @@
+.UserWidget {
+  margin-bottom: var(--spacing-04);
+  .user-menu {
+    display: grid;
+    text-align: start;
+    gap: var(--spacing-01) var(--spacing-02);
+    grid-template-columns: auto 1fr;
+
+    &.mini {
+      grid-template-columns: 1fr;
+      margin-inline: auto;
+      .user-pic {
+        margin-block-start: var(--spacing-04);
+        align-self: center;
+        justify-self: center;
+        font-size: 1.3rem;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+
+    .user-widget-texts-area {
+      display: flex;
+      flex-direction: column;
+      .user-role {
+        color: var(--gray-600);
+      }
+      .logout {
+        align-self: start;
+        color: var(--pri-500);
+      }
+    }
+  }
+}

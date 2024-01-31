@@ -1,0 +1,14 @@
+.elevation {
+  &-level-00 {
+    box-shadow: 0px 2px 4px rgba(56, 65, 70, 0);
+  }
+  &-level-01 {
+    box-shadow: 0px 2px 4px rgba(56, 65, 70, 0.04);
+  }
+  &-level-02 {
+    box-shadow: 0px 2px 12px rgba(56, 65, 70, 0.08);
+  }
+  &-level-03 {
+    box-shadow: 0px 4px 22px rgba(56, 65, 70, 0.11);
+  }
+}

@@ -1,0 +1,49 @@
+.Preview {
+  background: var(--background);
+  inset-inline-end: var(--spacing-06);
+  z-index: var(--sticky-bars-z);
+  border: 1px solid var(--gray-300);
+
+  .preview-container {
+    gap: var(--spacing-02);
+  }
+  .button--copy {
+    width: 5.4rem;
+    align-self: flex-end;
+  }
+  .button-delete-all {
+    width: fit-content;
+  }
+  textarea {
+    width: 50ch;
+  }
+
+  .closeButton {
+    width: 40px;
+    height: 40px;
+    transform: translate(-1px, -100%);
+    background-color: var(--pri-500);
+    border-top-left-radius: var(--spacing-02);
+    border-top-right-radius: var(--spacing-02);
+    color: var(--white);
+    align-items: center;
+  }
+
+  &.closed {
+    .closeButton {
+      background: var(--orange-500);
+      transform: translateY(-50%);
+    }
+  }
+
+  .live-preview {
+    color: var(--gray-1000);
+    background: var(--white);
+    width: 100%;
+  }
+
+  .preview-part-container {
+    border-radius: var(--spacing-03);
+    padding: var(--spacing-04);
+  }
+}

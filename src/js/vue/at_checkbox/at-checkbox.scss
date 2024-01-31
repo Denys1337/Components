@@ -1,0 +1,113 @@
+@import '../../../style/scss/_mixin.scss';
+@import '../../../style/scss/_base_functions';
+
+.at-checkbox-input {
+  display: none;
+}
+
+.AtCheckbox {
+  display: inline-flex;
+  align-items: center;
+  color: var(--mt-color);
+  margin-inline-end: var(--spacing-08);
+  font-size: var(--input-font-size);
+  cursor: pointer;
+
+  &.disabled {
+    cursor: context-menu;
+  }
+
+  .at-checkbox {
+    display: inline-block;
+    font-size: 1.14em;
+    margin-inline-end: pxToRem(12);
+    position: relative;
+    min-width: 1.1em;
+    height: 1.1em;
+    border-radius: 2px;
+    border: solid 2px var(--gray-800);
+    background: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+
+    &:before {
+      content: '';
+      height: 2.5em;
+      width: 2.5em;
+      border-radius: 50%;
+      background-color: transparent;
+      position: absolute;
+      top: -0.6875em;
+      left: -0.875em;
+      z-index: 1;
+      transform: scale(0);
+      transition: 300ms;
+    }
+
+    &:after {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      &:before {
+        background-color: rgba(210, 210, 210, 0.3);
+        transform: scale(1);
+        transition: 300ms;
+      }
+    }
+
+    &.checked {
+      border-color: var(--lightish-blue);
+      background-color: var(--lightish-blue);
+
+      &:hover {
+        &:before {
+          background-color: rgba(58, 121, 255, 0.1);
+        }
+      }
+
+      .at-checkbox-icon {
+        color: var(--white);
+        position: absolute;
+        top: -0.15em;
+        display: block;
+      }
+
+      .indeterminate:before {
+        content: '-';
+        position: absolute;
+        top: -4px;
+        left: -4px;
+      }
+    }
+
+    &.disabled {
+      border-color: var(--quotation-disabled-grey);
+
+      &.checked {
+        border-color: var(--quotation-disabled-grey);
+        background-color: var(--quotation-disabled-grey);
+      }
+
+      &:hover {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .required-sign {
+    color: var(--severity-red);
+    margin-inline-start: pxToRem(3);
+  }
+
+  .at-checkbox-label {
+    position: relative;
+    top: 0.05em;
+  }
+}
